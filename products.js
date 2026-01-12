@@ -330,7 +330,14 @@ window.products = [
             "1600x780x600(mm)",
             "1500x760x6000(mm)",],
         desc:"Bảo hành 5 năm,chất liệu acrylic, khả năng chịu lực siêu tốt,chống bám bẩn…",},
-
+{id: 36,
+     name:" Bồn chân yếm massage sục khí led",
+     price: 45000000,
+     brand: "Massage",
+     rating:5,
+     img1:"key/yemxam.jpg",
+     size:["1400x00x5600(mm)",],
+     desc:"Màu sẽ làm theo yêu cầu, bảo hành đầy đủ",},
 
     {id:37,
         name:"Bồn Góc Kính Gắn Sen Vòi",
