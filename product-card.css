@@ -1,0 +1,650 @@
+/* =========================
+   PRODUCT CARD FIX
+========================= */
+
+/* Card luôn cao đều */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Ảnh không bị méo */
+.product-card img {
+    object-fit: cover;
+}
+
+/* =========================
+   PRICE AREA
+========================= */
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Hàng giá gốc + discount */
+.price-original-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Giá gốc */
+.price-original {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e53935;
+}
+
+/* Khi có sale → gạch */
+.price-original-strike {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Discount badge */
+.discount-text {
+    background: #ffecec;
+    color: #e53935;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.price-original:not(.price-original-strike) + .discount-text {
+    display: none;
+}
+
+/* Giá sale */
+.price-sale-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.price-old {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e53935;
+}
+
+/* =========================
+   BUTTON STICK BOTTOM
+========================= */
+
+.product-card .viewDetail {
+    margin-top: 1rem;
+}
+
+/* =========================
+   TOP SELLER TAG
+========================= */
+
+.product-card .top-seller {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #e53935;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.product-card img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card .image-wrapper {
+    position: relative;
+}
+
+.product-card .image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 60%,
+            rgba(0,0,0,0.08) 100%
+    );
+}
+
+.top-seller {
+    backdrop-filter: blur(6px);
+    background: linear-gradient(135deg, #ff4d4f, #ff7875);
+    border-radius: 999px;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+}
+.product-card h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.product-card .brand {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.product-card .rating {
+    letter-spacing: 1px;
+}
+
+.discount-text {
+    background: #fff1f2;
+    color: #e11d48;
+    font-weight: 600;
+}
+
+.price-old {
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+}
+.viewDetail {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+.product-card .content {
+    padding: 1.25rem;
+}
+.image-wrapper {
+    height: 220px;               /* cố định header */
+    background: #f5f6f7;         /* nền trung tính */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;           /* ❗FULL COVER */
+    object-position: center;     /* canh giữa */
+    transition: transform 0.4s ease;
+}
+.image-wrapper {
+    background: linear-gradient(180deg, #fafafa, #f1f1f1);
+}
+/* =========================
+   MODAL BASE
+========================= */
+
+.detail-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+.detail-modal.hidden {
+    display: none;
+}
+
+.detail-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.detail-container {
+    position: relative;
+    margin: auto;
+    background: #fff;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    overflow: hidden;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .detail-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   IMAGE AREA
+========================= */
+
+.detail-image {
+    position: relative;
+    background: #f4f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+}
+
+.detail-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.detail-image img.active {
+    display: block;
+}
+
+/* Nav buttons */
+.detail-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.detail-nav:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+.detail-nav.prev { left: 12px; }
+.detail-nav.next { right: 12px; }
+
+/* =========================
+   CONTENT
+========================= */
+
+.detail-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-content h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.detail-content .brand {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.detail-content .rating {
+    color: #f59e0b;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.detail-content .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ef4444;
+    margin-bottom: 12px;
+}
+
+.detail-content .desc {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Size list */
+.detail-content h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.size-list {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.size-list li {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+    margin: auto auto 0;
+    width: 160px;
+    padding: 10px 0;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(37,99,235,0.45);
+}
+.pt-72 {
+    padding-top: 72px;
+}
+
+
+/* =========================
+   OVERLAY
+========================= */
+
+.mobile-filter {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1000;
+}
+
+.mobile-filter.hidden {
+    display: none;
+}
+
+/* =========================
+   PANEL
+========================= */
+
+.mobile-filter-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 85%;
+    max-width: 380px;
+    background: #fff;
+    box-shadow: 8px 0 30px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+/* Khi mở */
+.mobile-filter.show .mobile-filter-panel {
+    transform: translateX(0);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.filter-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.filter-close {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* =========================
+   BODY
+========================= */
+
+.filter-body {
+    padding: 16px;
+    overflow-y: auto;
+}
+
+/* Search */
+.filter-search {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+/* Clear */
+.filter-clear {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* =========================
+   FILTER BLOCK
+========================= */
+
+.filter-block {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 0;
+}
+
+.accordion-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.accordion-btn span {
+    transition: transform 0.25s ease;
+}
+
+/* open state */
+.accordion-btn.active span {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    margin-top: 10px;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+/* Checkbox list */
+.accordion-content label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+/* Price range */
+.price-range {
+    display: flex;
+    gap: 8px;
+}
+
+.price-range input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   SORT
+========================= */
+
+.filter-sort {
+    margin-top: 20px;
+}
+
+.filter-sort h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.filter-sort select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+}
+.accordion-content {
+    transition: all 0.25s ease;
+}
+
+.accordion-btn.active span {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.accordion-content.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+.accordion-content:not(.hidden) {
+    max-height: 600px; /* đủ lớn */
+    opacity: 1;
+}
+/* ===== MOBILE FILTER OVERLAY ===== */
+#mobileFilter {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 40;
+}
+
+/* ===== PANEL (OPEN FROM RIGHT) ===== */
+#mobileFilterPanel {
+    position: absolute;
+    top: 0;
+    right: 0;                 /* 👈 MỞ TỪ PHẢI */
+    height: 100vh;
+    width: 320px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.25);
+    overflow-y: auto;
+
+    transform: translateX(100%);  /* 👈 ẨN VỀ PHẢI */
+    transition: transform 0.3s ease;
+}
+
+/* Khi mở */
+#mobileFilter.show #mobileFilterPanel {
+    transform: translateX(0);
+}
+#mobileFilterPanel h2 {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 5;
+}
+
+#closeMobileFilter {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #ef4444;
+}
+
+/* ===== FILTER HEADER ===== */
+.filter-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Close button */
+.filter-close {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-close:hover {
+    background: #e5e7eb;
+}
+
+/* Chừa khoảng cho header */
+#mobileFilterPanel {
+    padding-top: 0;
+}
+.mt-72px {
+    margin-top: 72px;
+}
+
+.bottom-75 {
+    bottom: 75px;
+}
+.fs-17 {
+    font-size: 17px;
+}
