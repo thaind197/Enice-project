@@ -337,7 +337,7 @@ window.products = [
         rating:5,
         isTopseller: true,
         img1:"key/yemxam.jpg",
-        size:["1400x00x5600(mm)",],
+        size:["1400x700x560(mm)",],
         desc:"Màu sẽ làm theo yêu cầu, bảo hành đầy đủ",},
     {id:37,
         name:"Bồn Góc Kính Gắn Sen Vòi",
