@@ -677,14 +677,18 @@
     .detail-modal {
         overflow-y: auto !important;
         -webkit-overflow-scrolling: touch;
-        align-items: flex-start !important;
-        /* Để không bị mất đầu */
+        /* Center content */
+        display: flex !important;
         padding: 10px !important;
     }
 
+    .detail-modal.hidden {
+        display: none !important;
+    }
+
     .detail-container {
-        margin: 20px auto !important;
-        /* Cách lề trên dưới */
+        margin: auto !important;
+        /* Center vertically & horizontally safe */
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
