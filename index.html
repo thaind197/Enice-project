@@ -11,6 +11,45 @@
   <meta name="description"
     content="ENICE chuyên cung cấp thiết bị phòng tắm, vệ sinh, bồn tắm cao cấp. Sản phẩm chất lượng, thiết kế hiện đại, giá tốt và bảo hành chính hãng.">
   <meta name="keywords" content="thiết bị vệ sinh, bồn tắm, lavabo, sen vòi, enice, phòng tắm cao cấp">
+  <link rel="canonical" href="https://enice.vn/">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FurnitureStore",
+      "name": "ENICE Store",
+      "image": "https://enice.vn/key/logo_new_test.png",
+      "@id": "https://enice.vn/#organization",
+      "url": "https://enice.vn/",
+      "telephone": "+84962534567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ha Noi, Viet Nam",
+        "addressLocality": "Hanoi",
+        "postalCode": "100000",
+        "addressCountry": "VN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "21:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/enice.vn",
+        "https://zalo.me/0962534567"
+      ]
+    }
+    </script>
 
   <!-- Open Graph / Facebook / Zalo -->
   <meta property="og:type" content="website">
@@ -21,6 +60,60 @@
   <meta property="og:image" content="enice_nen.jpg">
   <meta property="og:site_name" content="ENICE Store">
   <meta property="og:locale" content="vi_VN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ENICE - Thiết Bị Phòng Tắm Cao Cấp">
+  <meta name="twitter:description"
+    content="ENICE chuyên cung cấp thiết bị phòng tắm, vệ sinh, bồn tắm cao cấp. Sản phẩm chất lượng, thiết kế hiện đại.">
+  <meta name="twitter:image" content="https://enice.vn/key/enice_nen.jpg">
+
+  <!-- Additional SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="ENICE Store">
+  <meta name="theme-color" content="#2563EB">
+
+  <!-- FAQ Schema for Google Rich Results -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Enice có miễn phí vận chuyển không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chúng tôi miễn phí vận chuyển cho đơn hàng từ 30.000.000đ trong nội thành Hà Nội và TP.HCM. Các đơn hàng ngoại tỉnh sẽ được hỗ trợ một phần phí vận chuyển."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sản phẩm được bảo hành bao lâu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Các sản phẩm sứ được bảo hành men sứ lên đến 10 năm. Phụ kiện sen vòi bảo hành 3-5 năm. Bồn tắm bảo hành thân vỏ 5 năm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tôi có thể đổi trả hàng không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enice hỗ trợ đổi mới trong vòng 7 ngày nếu sản phẩm có lỗi từ nhà sản xuất. Sản phẩm phải còn nguyên vẹn."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Enice có nhận thi công lắp đặt không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có. Chúng tôi có đội ngũ kỹ thuật viên chuyên nghiệp hỗ trợ lắp đặt tại nhà."
+          }
+        }
+      ]
+    }
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./product-card.css">
@@ -208,13 +301,14 @@
   <header class="bg-white shadow sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2">
       <!-- Brand Area -->
-      <a href="#" class="flex items-center gap-3 flex-shrink-0">
+      <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+        class="flex items-center gap-3 flex-shrink-0">
         <div class="flex items-center justify-center">
-          <img src="key/logo_new.png" alt="ENICE Logo" class="h-12 sm:h-20 w-auto object-contain"
+          <img src="key/logo_new_test.png" alt="ENICE Logo" class="h-12 sm:h-20 w-auto object-contain"
             style="backface-visibility: hidden; filter: contrast(1.8) brightness(0.9) saturate(1.1);">
         </div>
-        <span class="text-xl sm:text-3xl font-bold text-blue-600 truncate leading-none"
-          style="margin-top: 2px;">EniceStore</span>
+        <!-- <span class="text-xl sm:text-3xl font-bold text-blue-600 truncate leading-none"
+          style="margin-top: 2px;">EniceStore</span> -->
       </a>
 
       <!-- Mobile Hamburger (Only on mobile) -->
@@ -225,10 +319,10 @@
       <!-- Combined Navigation Menu -->
       <div id="navMenu"
         class="flex flex-row text-sm md:text-lg font-medium space-x-1 sm:space-x-6 w-full md:w-auto px-2 md:p-0 justify-center md:justify-end overflow-x-auto whitespace-nowrap mt-1 md:mt-0">
-        <a href="#home"
+        <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
           class="hover:text-blue-600 px-3 py-2 border-b-2 border-transparent hover:border-blue-600 transition-all">Trang
           chủ</a>
-        <a href="#"
+        <a href="#productList"
           class="hover:text-blue-600 px-3 py-2 border-b-2 border-transparent hover:border-blue-600 transition-all">Sản
           phẩm</a>
         <a href="#"
@@ -392,6 +486,68 @@
   </section>
 
 
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="py-8 md:py-12 bg-white mb-6 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
+        <!-- Feature 1: Chính Hãng -->
+        <div class="flex flex-col items-center text-center group cursor-pointer">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-lg group-hover:-translate-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 text-sm md:text-base mb-1">Chính Hãng 100%</h3>
+          <p class="text-xs md:text-sm text-gray-500 leading-relaxed max-w-[160px]">Cam kết chất lượng chuẩn châu
+            Âu</p>
+        </div>
+        <!-- Feature 2: Bảo Hành -->
+        <div class="flex flex-col items-center text-center group cursor-pointer">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-lg group-hover:-translate-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 text-sm md:text-base mb-1">Bảo Hành 5 Năm</h3>
+          <p class="text-xs md:text-sm text-gray-500 leading-relaxed max-w-[160px]">An tâm sử dụng dài lâu</p>
+        </div>
+        <!-- Feature 3: Vận Chuyển -->
+        <div class="flex flex-col items-center text-center group cursor-pointer">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-lg group-hover:-translate-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 text-sm md:text-base mb-1">Miễn Phí Vận Chuyển</h3>
+          <p class="text-xs md:text-sm text-gray-500 leading-relaxed max-w-[160px]">Đơn hàng từ 30.000.000đ</p>
+        </div>
+        <!-- Feature 4: Lắp Đặt -->
+        <div class="flex flex-col items-center text-center group cursor-pointer">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-lg group-hover:-translate-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 text-sm md:text-base mb-1">Tư Vấn & Lắp Đặt</h3>
+          <p class="text-xs md:text-sm text-gray-500 leading-relaxed max-w-[160px]">Đội ngũ kỹ thuật chuyên nghiệp
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="flex flex-col md:flex-row max-w-7xl mx-auto mt-6">
     <div id="mobileFilter"
       class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 transition-opacity duration-300 opacity-0">
@@ -671,7 +827,7 @@
 
     <div class="flex-1 flex flex-col">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-4 md:px-6 mb-4 gap-4">
-        <h2 class="text-lg md:text-xl font-bold text-gray-800">Danh sách sản phẩm</h2>
+        <h2 id="productList" class="text-lg md:text-xl font-bold text-gray-800 scroll-mt-28">Danh sách sản phẩm</h2>
         <div
           class="flex items-center gap-2 w-full md:w-auto justify-between md:justify-end border-t md:border-none pt-3 md:pt-0">
           <div class="flex items-center gap-2">
@@ -1242,6 +1398,397 @@
     });
   </script>
 
+  <!-- TESTIMONIALS SECTION -->
+  <section class="py-12 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-2">Khách Hàng Nói Gì Về Enice?</h2>
+      <p class="text-center text-gray-500 mb-8">Hơn 1000+ khách hàng tin tưởng lựa chọn</p>
+
+      <!-- Carousel Container -->
+      <div class="relative overflow-visible">
+        <!-- Scroll Container -->
+        <div id="testimonialCarousel" class="flex gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory"
+          style="scrollbar-width: none; -ms-overflow-style: none;">
+
+          <!-- Review 1 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Bồn tắm rất đẹp, giao hàng nhanh. Nhân viên tư vấn nhiệt tình, lắp
+              đặt cẩn thận. Rất hài lòng với dịch vụ của shop."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">
+                MH</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Minh Hoàng</div>
+                <div class="text-xs text-gray-500">Hà Nội</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Sản phẩm chất lượng, men sứ sáng bóng. Giá cả hợp lý so với các bên
+              khác. Sẽ ủng hộ Enice lần sau."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center font-bold text-pink-600">
+                TL</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Thùy Linh</div>
+                <div class="text-xs text-gray-500">TP. HCM</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Đã mua combo phòng tắm ở đây, rất ưng ý. Thiết kế hiện đại, sang
+              trọng. Chúc shop ngày càng phát triển."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-600">TA
+              </div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Tuấn Anh</div>
+                <div class="text-xs text-gray-500">Đà Nẵng</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Lavabo đẹp quá, đúng như hình. Đóng gói cẩn thận, không trầy xước.
+              Thợ lắp đặt chuyên nghiệp. 10 điểm!"</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600">
+                HN</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Hồng Nhung</div>
+                <div class="text-xs text-gray-500">Hải Phòng</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Mua bồn cầu thông minh, dùng rất tiện. Chức năng rửa tự động sạch sẽ.
+              Gia đình ai cũng thích."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center font-bold text-orange-600">
+                VD</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Văn Dũng</div>
+                <div class="text-xs text-gray-500">Bắc Ninh</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Sen vòi cao cấp, nước chảy mạnh đều. Thiết kế sang trọng, phù hợp với
+              không gian hiện đại."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center font-bold text-teal-600">
+                TT</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Thanh Tâm</div>
+                <div class="text-xs text-gray-500">Nghệ An</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 7 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Phòng xông hơi lắp đặt hoàn hảo. Thư giãn sau ngày làm việc mệt mỏi.
+              Cảm ơn Enice nhiều!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-600">QH
+              </div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Quốc Huy</div>
+                <div class="text-xs text-gray-500">Vũng Tàu</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 8 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Gương đèn LED sáng đẹp, tiết kiệm điện. Phòng tắm trông sang hẳn lên.
+              Giá hợp lý."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center font-bold text-indigo-600">
+                ML</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Mai Lan</div>
+                <div class="text-xs text-gray-500">Cần Thơ</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 9 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Mua tủ lavabo PVC, chống nước tốt, không bị phồng rộp. Đã dùng 6
+              tháng vẫn như mới."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center font-bold text-cyan-600">
+                DT</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Đức Thắng</div>
+                <div class="text-xs text-gray-500">Hưng Yên</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 10 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Bồn tắm massage sướng quá! Jets mạnh, ngâm nước ấm thư giãn cực kỳ.
+              Worth every penny."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center font-bold text-yellow-600">
+                KA</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Kim Anh</div>
+                <div class="text-xs text-gray-500">Bình Dương</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 11 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Mình là kiến trúc sư, đã giới thiệu Enice cho nhiều khách hàng. Ai
+              cũng hài lòng về chất lượng."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-lime-100 flex items-center justify-center font-bold text-lime-600">
+                PL</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Phúc Long</div>
+                <div class="text-xs text-gray-500">Quảng Ninh</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 12 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Đặt bồn tắm cho villa, giao hàng tận nơi miễn phí. Thợ lắp đặt khéo
+              léo, gọn gàng sạch sẽ."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-600">
+                BH</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Bảo Hân</div>
+                <div class="text-xs text-gray-500">Nha Trang</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 13 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Vòi chén nóng lạnh xịn, van ceramic bền bỉ. Đã 2 năm chưa phải thay
+              gì. Recommend!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center font-bold text-rose-600">
+                NT</div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Ngọc Trâm</div>
+                <div class="text-xs text-gray-500">Thái Nguyên</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 14 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Bồn rửa bát inox dày dặn, không bị ố vàng. Thiết kế 2 ngăn tiện lợi.
+              Gia đình rất ưng."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center font-bold text-sky-600">HM
+              </div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Hoàng Minh</div>
+                <div class="text-xs text-gray-500">Lào Cai</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 15 -->
+          <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">★★★★★</div>
+            </div>
+            <p class="text-gray-600 mb-4 text-sm">"Đã mua đủ bộ thiết bị phòng tắm từ Enice. Đồng bộ, đẹp, giá tốt hơn
+              mua lẻ rất nhiều."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center font-bold text-amber-600">YN
+              </div>
+              <div>
+                <div class="font-bold text-gray-800 text-sm">Yến Nhi</div>
+                <div class="text-xs text-gray-500">Đồng Nai</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button onclick="document.getElementById('testimonialCarousel').scrollBy({left: -320, behavior: 'smooth'})"
+          class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 w-12 h-12 bg-white border border-gray-200 shadow-xl rounded-full items-center justify-center text-gray-500 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:scale-110 transition-all duration-300 z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button onclick="document.getElementById('testimonialCarousel').scrollBy({left: 320, behavior: 'smooth'})"
+          class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-12 h-12 bg-white border border-gray-200 shadow-xl rounded-full items-center justify-center text-gray-500 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:scale-110 transition-all duration-300 z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Scroll Hint for Mobile -->
+      <p class="text-center text-gray-400 text-sm mt-4 md:hidden">← Vuốt để xem thêm →</p>
+    </div>
+  </section>
+
+  <!-- Mouse Drag Scroll Script for Testimonials -->
+  <script>
+    (function () {
+      const carousel = document.getElementById('testimonialCarousel');
+      if (!carousel) return;
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      carousel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        carousel.style.cursor = 'grabbing';
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carousel.style.cursor = 'grab';
+      });
+
+      carousel.addEventListener('mouseup', () => {
+        isDown = false;
+        carousel.style.cursor = 'grab';
+      });
+
+      carousel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed multiplier
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+
+      // Set default cursor
+      carousel.style.cursor = 'grab';
+    })();
+  </script>
+
+  <!-- FAQ SECTION -->
+  <section class="py-12 bg-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Câu Hỏi Thường Gặp</h2>
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold text-gray-800 list-none">
+            <span>Enice có miễn phí vận chuyển không?</span>
+            <span class="transition group-open:rotate-180">▾</span>
+          </summary>
+          <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+            Chúng tôi miễn phí vận chuyển cho đơn hàng từ 30.000.000đ trong nội thành Hà Nội và TP.HCM. Các đơn hàng
+            ngoại tỉnh sẽ được hỗ trợ một phần phí vận chuyển tùy theo giá trị đơn hàng.
+          </p>
+        </details>
+        <!-- FAQ 2 -->
+        <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold text-gray-800 list-none">
+            <span>Sản phẩm được bảo hành bao lâu?</span>
+            <span class="transition group-open:rotate-180">▾</span>
+          </summary>
+          <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+            Các sản phẩm sứ (bồn cầu, lavabo) được bảo hành men sứ lên đến 10 năm. Phụ kiện sen vòi bảo hành 3-5 năm.
+            Bồn tắm bảo hành thân vỏ 5 năm, hệ thống điện/massage 1-2 năm.
+          </p>
+        </details>
+        <!-- FAQ 3 -->
+        <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold text-gray-800 list-none">
+            <span>Tôi có thể đổi trả hàng không?</span>
+            <span class="transition group-open:rotate-180">▾</span>
+          </summary>
+          <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+            Enice hỗ trợ đổi mới trong vòng 7 ngày nếu sản phẩm có lỗi từ nhà sản xuất. Sản phẩm phải còn nguyên vẹn,
+            chưa qua sử dụng và đầy đủ bao bì.
+          </p>
+        </details>
+        <!-- FAQ 4 -->
+        <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold text-gray-800 list-none">
+            <span>Enice có nhận thi công lắp đặt không?</span>
+            <span class="transition group-open:rotate-180">▾</span>
+          </summary>
+          <p class="text-gray-600 mt-3 text-sm leading-relaxed">
+            Có. Chúng tôi có đội ngũ kỹ thuật viên chuyên nghiệp hỗ trợ lắp đặt tại nhà. Vui lòng liên hệ hotline để
+            được báo giá chi tiết cho từng hạng mục.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-white shadow p-6 max-w-7xl mx-auto mt-10 rounded text-center">
     <h2 class="text-2xl font-bold text-blue-600 mb-2">Đăng ký nhận ưu đãi</h2>
     <p class="text-gray-600 mb-4">Nhận ngay thông tin khuyến mãi & sản phẩm mới nhất</p>
@@ -1329,7 +1876,6 @@
         alt="ZaloPay" />
     </div>
 
-    <div class="text-center text-gray-400 text-sm mt-8">ENICE- THIẾT BỊ PHÒNG TẮM HIỆN ĐẠI</div>
   </footer>
   <div id="fabWrapper" class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
     <div id="fabMenu"

@@ -2,6 +2,10 @@
    PRODUCT CARD FIX
 ========================= */
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Card luôn cao đều */
 .product-card {
     display: flex;
