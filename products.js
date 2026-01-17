@@ -303,7 +303,7 @@ window.products = [
         desc:"Bảo hành 5 năm,chất liệu acrylic, khả năng chịu lực siêu tốt,chống bám bẩn…",},
     {id:33,
         name:"Bồn Tắm Đôi",
-        price:37714000,
+        price:60000000,
         brand:"Ngâm Thường",
         rating:4,
         img1:"key/doingam.jpg",
