@@ -366,7 +366,7 @@ window.products = [
         desc:"Bảo hành 5 năm,chất liệu acrylic, khả năng chịu lực siêu tốt,chống bám bẩn…",},
     {id:40,
         name:"Bồn Kính Đôi Ngâm",
-        price:65000000,
+        price:25000000,
         brand:"Ngâm Thường",
         rating:5,
         img1:"key/kinhdoingam.jpg",
