@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 82, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/DUY%20ANH%20PC/enice-nextjs/src/lib/prisma.ts"],"sourcesContent":["import { PrismaClient } from '@prisma/client'\r\n\r\nconst globalForPrisma = globalThis as unknown as {\r\n  prisma: PrismaClient | undefined\r\n}\r\n\r\nexport const prisma = globalForPrisma.prisma ?? new PrismaClient()\r\n\r\nif (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma"],"names":["globalForPrisma","globalThis","prisma"],"mappings":";;;;AAAA;;AAEA,MAAMA,kBAAkBC;AAIjB,MAAMC,SAASF,gBAAgBE,MAAM,IAAI,IAAI,sMAAY;AAEhE,wCAA2CF,gBAAgBE,MAAM,GAAGA"}}]
+}
