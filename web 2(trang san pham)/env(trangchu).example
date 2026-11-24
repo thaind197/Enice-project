@@ -1,0 +1,11 @@
+# Sao chép file này thành ".env" rồi điền giá trị thật. KHÔNG đưa ".env" lên GitHub.
+# Viết sát dấu "=", không có dấu cách, không có dấu nháy.
+
+# Khóa bí mật để web quản trị viên được phép sửa dữ liệu. Tạo bằng:
+#   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+API_KEY=
+
+PORT=3001
+
+# Bỏ dấu # ở dòng dưới khi chạy sau nginx / hosting có HTTPS
+# TRUST_PROXY=1
