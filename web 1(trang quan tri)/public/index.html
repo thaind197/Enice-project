@@ -6,21 +6,21 @@
 [data-t=dark]{--bg:#0f1530;--card:#171f45;--tx:#e8ecff;--mut:#8f9bc4;--bd:#2a3466;--hd:#1d2650;--pill:#26305f}
 *{box-sizing:border-box;margin:0}
 body{font:13px/1.5 Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx);display:flex;min-height:100vh}
-aside{width:248px;background:linear-gradient(180deg,#1b2559,#151d4a);color:#cdd5f4;padding:20px 14px;position:sticky;top:0;height:100vh;flex:none;display:flex;flex-direction:column}
+aside{width:248px;background:linear-gradient(180deg,var(--sb1),var(--sb2));color:#cdd5f4;padding:20px 14px;position:sticky;top:0;height:100vh;flex:none;display:flex;flex-direction:column}
 .logo{display:flex;gap:10px;align-items:center;padding:4px 10px 22px;color:#fff;font-weight:800;font-size:17px;line-height:1.1}
-.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#6d5df6,#4f7cf0);display:grid;place-items:center;font-style:normal}
+.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#a855f7);display:grid;place-items:center;font-style:normal}
 .logo span{display:block;font-size:10px;font-weight:500;letter-spacing:.12em;color:#9aa6dc}
 aside h6{font-size:10px;letter-spacing:.12em;color:#8390c9;margin:16px 12px 6px}
 aside a{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:9px;color:#cdd5f4;cursor:pointer;font-size:14px;margin-bottom:2px}
-aside a:hover{background:#243070}aside a.on{background:#3b6cf0;color:#fff}
-aside a em{margin-left:auto;font-style:normal;font-size:11px;background:#2c3a78;border-radius:10px;padding:0 8px}
-.foot{margin-top:auto;border-top:1px solid #2c3a78;padding-top:12px}
-.user{display:flex;gap:10px;align-items:center;background:#243070;border-radius:12px;padding:10px;margin-top:10px}
-.user i{width:34px;height:34px;border-radius:50%;background:#fff;color:#2f66f0;font-style:normal;font-weight:800;font-size:12px;display:grid;place-items:center}
+aside a:hover{background:var(--sb3)}aside a.on{background:var(--blue);color:#fff}
+aside a em{margin-left:auto;font-style:normal;font-size:11px;background:var(--sb4);border-radius:10px;padding:0 8px}
+.foot{margin-top:auto;border-top:1px solid var(--sb4);padding-top:12px}
+.user{display:flex;gap:10px;align-items:center;background:var(--sb3);border-radius:12px;padding:10px;margin-top:10px}
+.user i{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--blue);font-style:normal;font-weight:800;font-size:12px;display:grid;place-items:center}
 .user div{flex:1;font-size:12px;line-height:1.3}.user small{color:#9aa6dc}
-.user button{background:#3a4789;color:#fff;border:0;border-radius:6px;padding:3px 10px;cursor:pointer;font-size:11px}
+.user button{background:var(--sb5);color:#fff;border:0;border-radius:6px;padding:3px 10px;cursor:pointer;font-size:11px}
 main{flex:1;min-width:0}
-header{display:flex;gap:12px;align-items:center;padding:14px 32px;background:var(--card);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:5}
+header{display:flex;gap:12px;align-items:center;padding:14px 32px;background:var(--card);border-width:0 0 3px;border-style:solid;border-image:linear-gradient(90deg,var(--blue),#a855f7,#ec4899,#f59e0b,#14b8a6) 1;position:sticky;top:0;z-index:5}
 .crumb{color:var(--mut)}.crumb b{color:var(--tx)}
 .hq{margin-left:auto;width:260px;padding:9px 14px;border:1px solid var(--bd);border-radius:9px;background:var(--hd);color:var(--tx)}
 .live{font-size:11px;font-weight:700;color:#15935f;background:#e0f7ee;border-radius:20px;padding:5px 12px}
@@ -28,19 +28,13 @@ header{display:flex;gap:12px;align-items:center;padding:14px 32px;background:var
 .wrap{padding:26px 32px 40px}
 .eye{font-size:11px;letter-spacing:.1em;color:var(--mut)}h1{font-size:25px;margin:2px 0 2px;letter-spacing:-.01em}.sub{color:var(--mut)}
 .top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px;gap:12px;flex-wrap:wrap}
-.btn{padding:9px 16px;border-radius:9px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font:inherit;font-weight:500}
-.btn.p{background:var(--blue);color:#fff;border-color:var(--blue)}.btn:disabled{opacity:.4;cursor:default}
-.btn.e{background:#e8f0ff;color:#2f66f0;border-color:#d5e3ff;padding:6px 12px;font-size:12px}.btn.d{background:#fdecee;color:#e5484d;border-color:#f9d3d7;padding:6px 12px;font-size:12px}
-.card{background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--bd)}.card h3{font-size:15px}.mut{color:var(--mut)}.xs{font-size:11px}
-.grid{display:grid;gap:18px}.g4{grid-template-columns:repeat(4,1fr)}.g2{grid-template-columns:2fr 1fr}.g2b{grid-template-columns:1.6fr 1fr}.g4b{grid-template-columns:1fr 1fr}
-.num{font-size:30px;font-weight:800;margin-top:8px}
-.bars{display:flex;align-items:flex-end;gap:10px;height:170px;margin-top:16px;border-bottom:1px solid var(--bd)}
-.bars div{flex:1;display:flex;gap:4px;align-items:flex-end;justify-content:center;height:100%}
-.bars span{width:18px;border-radius:4px 4px 0 0;background:#5b7ee5}.bars span+span{background:#8ccdf5}
-.lab{display:flex;gap:10px}.lab p{flex:1;text-align:center;font-size:11px;color:var(--mut);margin-top:6px}
-.donut{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;margin:10px auto}
-.donut b{background:var(--card);width:102px;height:102px;border-radius:50%;display:grid;place-items:center;font-size:22px;text-align:center;line-height:1.1}
-.lg{display:flex;justify-content:space-between;font-size:12px;padding:2px 0}.lg i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px}
+.btn{padding:9px 16px;border-radius:9px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font:inherit;font-weight:500;transition:all .15s}
+.btn:hover{border-color:var(--blue)}
+.btn.p{background:var(--blue);color:#fff;border-color:var(--blue)}.btn.p:hover{opacity:.92}.btn:disabled{opacity:.4;cursor:default}
+.btn.e{background:var(--acl);color:var(--acx);border-color:var(--acb);padding:6px 12px;font-size:12px}.btn.d{background:#fdecee;color:#e5484d;border-color:#f9d3d7;padding:6px 12px;font-size:12px}
+.card{background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--bd);transition:box-shadow .2s}.card h3{font-size:15px}.mut{color:var(--mut)}.xs{font-size:11px}
+.grid{display:grid;gap:18px}.g4{grid-template-columns:repeat(4,1fr)}.g2{grid-template-columns:1.6fr 1fr}.g2eq{grid-template-columns:1fr 1fr}.g2b{grid-template-columns:1.6fr 1fr}.g4b{grid-template-columns:1fr 1fr}
+.num{font-size:28px;font-weight:800;margin-top:6px;letter-spacing:-.02em}
 .row{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--bd)}
 .th{width:42px;height:42px;border-radius:9px;object-fit:cover;background:var(--pill);flex:none;display:block}
 .row .n{flex:1;min-width:0}.row .n b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -59,26 +53,64 @@ td{padding:12px 10px;border-top:1px solid var(--bd);vertical-align:middle}
 .pg{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:16px;flex-wrap:wrap}.pg div{display:flex;gap:8px;align-items:center}
 .tiles{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
 .tile{border:1px solid var(--bd);border-radius:10px;padding:12px 16px;min-width:190px;cursor:pointer;background:var(--card);color:var(--tx);text-align:left;font:inherit}
-.tile.on{border-color:var(--blue);background:#e8f0ff55}.tile b{display:block}
+.tile.on{border-color:var(--blue);background:var(--acl)}.tile b{display:block}
 form.st input{width:100%;padding:9px 12px;border:1px solid var(--bd);border-radius:9px;background:var(--card);color:var(--tx);font:inherit}form.st input:disabled{opacity:.7}
 form.st small{display:block;margin-top:10px;min-height:18px;color:#d6303a}form.st small.ok{color:#15935f}
-dialog{border:0;border-radius:16px;padding:24px;width:600px;max-width:94vw;background:var(--card);color:var(--tx);box-shadow:0 24px 70px #1b255966}
+dialog{border:0;border-radius:16px;padding:24px;width:640px;max-width:94vw;background:var(--card);color:var(--tx);box-shadow:0 24px 70px #1b255966}
 dialog::backdrop{background:#1b255988}label{display:block;font-size:12px;color:var(--mut);margin:10px 0 3px}
 dialog input:not([type=checkbox]),dialog textarea,dialog select{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;font:inherit;background:var(--card);color:var(--tx)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.chk{display:flex;gap:18px;margin-top:12px}.chk label{margin:0;color:var(--tx);font-size:13px}
 #toast{position:fixed;right:24px;bottom:24px;background:#334168;color:#fff;padding:10px 18px;border-radius:9px;display:none;z-index:20}
- 
+
+/* ---------- HỆ THỐNG BÁO CÁO TƯƠNG TÁC ---------- */
+.rbar{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 18px;margin-bottom:18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 10px rgba(24,33,77,.03)}
+.rbar-grp{display:flex;align-items:center;gap:6px;background:var(--hd);padding:4px;border-radius:10px;border:1px solid var(--bd)}
+.rpill{border:0;background:transparent;color:var(--mut);padding:6px 12px;border-radius:7px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s}
+.rpill:hover{color:var(--tx)}.rpill.on{background:var(--blue);color:#fff;box-shadow:0 2px 6px rgba(47,102,240,.3)}
+.rsel{padding:7px 12px;border:1px solid var(--bd);border-radius:9px;background:var(--hd);color:var(--tx);font:inherit;font-size:12px;font-weight:500;cursor:pointer}
+.rbadge{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mut)}
+.ch-hd{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.ch-leg{display:flex;gap:14px;font-size:12px;align-items:center;flex-wrap:wrap}
+.ch-leg span{display:inline-flex;align-items:center;gap:6px;color:var(--mut)}
+.ch-leg i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.ch-box{position:relative;width:100%;user-select:none}
+.svg-ch{width:100%;height:auto;display:block;overflow:visible}
+.ch-bar{transition:opacity .15s,transform .15s;cursor:pointer}.ch-bar:hover{opacity:.82}
+.ch-pt{cursor:pointer;transition:r .15s}.ch-pt:hover{r:6.5}
+.donut-wrap{display:flex;align-items:center;gap:20px;margin-top:8px;flex-wrap:wrap;justify-content:center}
+.donut-svg{width:168px;height:168px;flex:none;overflow:visible}
+.donut-seg{cursor:pointer;transition:transform .2s,opacity .15s;transform-origin:84px 84px}
+.donut-seg:hover{transform:scale(1.04);opacity:.9}
+.donut-list{flex:1;min-width:160px;display:flex;flex-direction:column;gap:8px}
+.d-item{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:9px;background:var(--hd);cursor:pointer;border:1px solid transparent;transition:all .15s}
+.d-item:hover{border-color:var(--blue);background:var(--acl)}
+.d-item-l{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500}
+.d-item-l i{width:10px;height:10px;border-radius:50%;flex:none}
+.cmp-list{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.cmp-row{cursor:pointer;padding:6px 8px;border-radius:9px;transition:background .15s}
+.cmp-row:hover{background:var(--hd)}
+.cmp-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px}
+.cmp-track{height:10px;background:var(--pill);border-radius:99px;overflow:hidden;display:flex;gap:2px}
+.cmp-fill{height:100%;border-radius:99px;transition:width .4s ease}
+#ctip{position:fixed;pointer-events:none;z-index:99;background:rgba(15,21,48,.95);color:#fff;padding:10px 14px;border-radius:10px;font-size:12px;line-height:1.45;box-shadow:0 10px 30px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.12);display:none;min-width:170px;backdrop-filter:blur(6px)}
+#ctip b{display:block;font-size:13px;margin-bottom:4px;color:#fff}
+#ctip .tr{display:flex;justify-content:space-between;gap:14px;color:#cbd5e1}
+#ctip .tr strong{color:#fff}
+#ctip .hint{margin-top:6px;padding-top:5px;border-top:1px solid rgba(255,255,255,.12);font-size:10px;color:#93c5fd}
+.stc.clickable{cursor:pointer;transition:transform .15s,box-shadow .15s}.stc.clickable:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(24,33,77,.07)}
+
 .tag.g{background:var(--pill);color:var(--mut)}
 .out{flex:none;background:#dc2626;color:#fff;border:0;border-radius:9px;padding:9px 16px;min-height:38px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 2px 8px #dc262655;transition:background .15s}.out:hover{background:#b91c1c}.out:focus-visible{outline:3px solid #fca5a5;outline-offset:2px}.out:disabled{opacity:.6;cursor:wait}
 .mb,#fab{display:none}#bd{display:none}
 #fab{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;font-size:28px;line-height:1;padding:0;place-items:center;z-index:20;box-shadow:0 8px 24px #2f66f066}
 @media(max-width:900px){
- aside{position:fixed;z-index:40;left:0;top:0;height:100vh;height:100dvh;transform:translateX(-102%);transition:transform .25s;box-shadow:0 0 40px #0008;overflow-y:auto}
+ aside{position:fixed;z-index:40;left:0;top:0;height:100vh;height:100dvh;transform:translateX(-102%);transition:transform .25s;overflow-y:auto}body.nav aside{box-shadow:0 0 40px #0008}
  body.nav aside{transform:none}body.nav #bd{display:block;position:fixed;inset:0;background:#0007;z-index:35}
  .mb{display:inline-grid;place-items:center}#fab:not([hidden]){display:grid}
  header{padding:10px 14px;gap:8px}.hq{flex:1;min-width:0;width:auto;margin-left:0}.live,.crumb{display:none}
  .wrap{padding:16px 14px 96px}h1{font-size:21px}
- .g4{grid-template-columns:1fr 1fr}.g2,.g2b,.g4b{grid-template-columns:1fr}
+ .g4{grid-template-columns:1fr 1fr}.g2,.g2eq,.g2b,.g4b{grid-template-columns:1fr}
+ .rbadge{margin-left:0;width:100%;justify-content:space-between}
 }
 @media(max-width:760px){
  .out{padding:8px 12px;min-height:44px}
@@ -97,8 +129,35 @@ dialog input:not([type=checkbox]),dialog textarea,dialog select{width:100%;paddi
  .two{grid-template-columns:1fr}.chk{flex-direction:column;gap:10px}
  .sw{width:46px;height:26px}.sw i:before{width:20px;height:20px;top:3px;left:3px}.sw input:checked+i:before{transform:translateX(20px)}
  .pg{flex-direction:column;align-items:stretch}.pg div{justify-content:space-between}
- .lab p{font-size:9px}.bars{gap:4px}#toast{left:16px;right:16px;bottom:84px;text-align:center}
+ #toast{left:16px;right:16px;bottom:84px;text-align:center}
 }
+/* ---------- MÀU SẮC & CHỦ ĐỀ MÀU ---------- */
+:root{--ac2:#1d4ed8;--acl:rgba(47,102,240,.12);--acb:rgba(47,102,240,.28);--acx:#2f66f0;--sb1:#1b2559;--sb2:#151d4a;--sb3:#243070;--sb4:#2c3a78;--sb5:#3a4789}
+[data-t=dark]{--acx:#7ea2ff}
+html[data-c=tim]{--blue:#7c3aed;--ac2:#6d28d9;--acl:rgba(124,58,237,.12);--acb:rgba(124,58,237,.3);--acx:#7c3aed;--sb1:#2a1a5e;--sb2:#1d1245;--sb3:#38247a;--sb4:#432e8a;--sb5:#5440a0}
+html[data-t=dark][data-c=tim]{--acx:#c4a5ff}
+html[data-c=ngoc]{--blue:#047857;--ac2:#065f46;--acl:rgba(4,120,87,.12);--acb:rgba(4,120,87,.3);--acx:#047857;--sb1:#0f3d33;--sb2:#0a2c25;--sb3:#165246;--sb4:#1c6152;--sb5:#277a68}
+html[data-t=dark][data-c=ngoc]{--acx:#6ee7b7}
+html[data-c=cam]{--blue:#c2410c;--ac2:#9a3412;--acl:rgba(194,65,12,.12);--acb:rgba(194,65,12,.3);--acx:#c2410c;--sb1:#4a2210;--sb2:#351708;--sb3:#5f2f17;--sb4:#6e3a1f;--sb5:#884c2d}
+html[data-t=dark][data-c=cam]{--acx:#fdba74}
+html[data-c=hong]{--blue:#be185d;--ac2:#9d174d;--acl:rgba(190,24,93,.12);--acb:rgba(190,24,93,.3);--acx:#be185d;--sb1:#4d1230;--sb2:#370c22;--sb3:#65183f;--sb4:#74204c;--sb5:#8d3262}
+html[data-t=dark][data-c=hong]{--acx:#f9a8d4}
+html[data-c=do]{--blue:#be123c;--ac2:#9f1239;--acl:rgba(190,18,60,.12);--acb:rgba(190,18,60,.3);--acx:#be123c;--sb1:#4a1020;--sb2:#350a17;--sb3:#5f1729;--sb4:#6e2034;--sb5:#85304a}
+html[data-t=dark][data-c=do]{--acx:#fda4af}
+aside a.on span{color:#fff!important}
+.stc{position:relative;overflow:hidden;padding-left:24px}.stc:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.stc .l{padding-right:46px}.stc .chip{position:absolute;right:16px;top:16px;width:40px;height:40px;border-radius:12px;background:var(--cl);color:var(--c);display:grid;place-items:center;font-size:18px}
+.s1{--c:#2f66f0;--cl:rgba(47,102,240,.13)}.s2{--c:#16a34a;--cl:rgba(22,163,74,.14)}.s3{--c:#ea580c;--cl:rgba(234,88,12,.14)}.s4{--c:#9333ea;--cl:rgba(147,51,234,.14)}
+.k1{border-top:3px solid #2f66f0}.k2{border-top:3px solid #f59e0b}.k3{border-top:3px solid #14b8a6}.k4{border-top:3px solid #ec4899}.k5{border-top:3px solid var(--blue)}.k6{border-top:3px solid #a855f7}
+.pill.c{background:hsl(var(--h) 80% 92%);color:hsl(var(--h) 60% 28%)}[data-t=dark] .pill.c{background:hsl(var(--h) 35% 24%);color:hsl(var(--h) 85% 85%)}
+.pill.hot{background:#fee2e2;color:#b91c1c}[data-t=dark] .pill.hot{background:#4c1d24;color:#fca5a5}
+.qa{border-left:4px solid var(--blue)}.qa:nth-child(2){border-left-color:#f59e0b}.qa:nth-child(3){border-left-color:#14b8a6}.qa:nth-child(4){border-left-color:#ec4899}.qa:hover{background:var(--acl)}
+.sqs{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+.sq{width:34px;height:34px;border-radius:50%;border:3px solid var(--card);box-shadow:0 0 0 1px var(--bd);cursor:pointer;padding:0}.sq.on{box-shadow:0 0 0 3px var(--tx)}.sq:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.pal{position:fixed;top:68px;right:16px;z-index:30;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:12px;padding:14px;box-shadow:0 12px 40px #0003;width:250px}.pal[hidden]{display:none}
+[data-t=dark] .live,[data-t=dark] .tag{background:rgba(34,197,94,.16);color:#86efac}[data-t=dark] .tag.o{background:rgba(245,158,11,.16);color:#fcd34d}[data-t=dark] .tag.g{background:var(--pill);color:var(--mut)}
+[data-t=dark] .btn.d{background:rgba(229,72,77,.14);color:#fca5a5;border-color:rgba(229,72,77,.3)}
+@media(max-width:760px){.pl-btn{display:none}.stc .chip{width:34px;height:34px;top:12px;right:12px}.stc{padding-left:20px}}
 </style></head><body>
 <aside><div class="logo"><i>E</i><div>ENICE<span>ADMINISTRATION</span></div></div><div id="nav"></div>
   <div class="foot"><a href="https://enice.vn" target="_blank" rel="noopener">↗ Xem trang chủ bán hàng</a>
@@ -106,16 +165,21 @@ dialog input:not([type=checkbox]),dialog textarea,dialog select{width:100%;paddi
 <div id="bd"></div>
 <main>
   <header><button class="ic mb" id="hb" aria-label="Mở menu">☰</button><div class="crumb">ENICE / <b id="crumb"></b></div><input class="hq" id="q" placeholder="Tìm nhanh sản phẩm..." aria-label="Tìm nhanh sản phẩm">
-    <span class="live">● ĐÃ KẾT NỐI WEB 2</span><button class="ic" id="dk" title="Giao diện tối" aria-label="Đổi giao diện sáng/tối">◐</button><button type="button" class="out" id="lo" onclick="logout()" title="Đăng xuất khỏi trang quản trị">⎋ Đăng xuất</button></header>
+    <span class="live">● ĐÃ KẾT NỐI WEB SẢN PHẨM</span><button class="ic pl-btn" id="pl" title="Chọn màu giao diện" aria-label="Chọn màu giao diện" aria-expanded="false">◍</button><button class="ic" id="dk" title="Giao diện tối" aria-label="Đổi giao diện sáng/tối">◐</button><button type="button" class="out" id="lo" onclick="logout()" title="Đăng xuất khỏi trang quản trị">⎋ Đăng xuất</button></header>
   <div class="wrap" id="view"></div>
 </main>
-<dialog id="dlg"><form id="f" method="dialog"></form></dialog><div id="toast"></div><button class="btn p" id="fab" onclick="fabAdd()" aria-label="Thêm mới" hidden>+</button>
+<dialog id="dlg"><form id="f" method="dialog"></form></dialog>
+<div id="pal" class="pal" role="dialog" aria-label="Chọn màu giao diện" hidden><b>Màu giao diện</b><div class="sqs"></div></div>
+<div id="ctip"></div>
+<div id="toast"></div>
+<button class="btn p" id="fab" onclick="fabAdd()" aria-label="Thêm mới" hidden>+</button>
 <script>
-const IMG=location.hostname==='localhost'?'http://localhost:3001/':'https://enice.vn/';   // địa chỉ web 2 để hiện ảnh
-const CATS={'Ngâm Thường':'Bồn Tắm Ngâm Việt Nam','Nhập Khẩu':'Bồn Tắm Nhập Khẩu','Phòng Xông Hơi':'Phòng Xông Hơi','Massage':'Bồn Tắm Massage VN','Bồn cầu':'Bồn Cầu','Sen Vòi':'Sen Vòi Treo Tường','Cây sen đặt sàn':'Cây sen đặt sàn','Tủ Nhựa':'Tủ Nhựa PVC Cao Cấp','lavabo':'Lavabo','Bàn Đá':'Bàn Đá','Gương':'Gương Soi Đèn Led','Vòi Lavabo':'Vòi Lavabo Nóng Lạnh','Vòi Chén':'Vòi Chén Nóng Lạnh','Vòi Vệ Sinh':'Vòi Xịt Vệ Sinh','Bộ Xả':'Bộ Xả Thoát Nước LVB','Bồn Rửa Bát':'Bồn Rửa Bát Inox','Phụ Kiện':'Phụ Kiện Phòng Tắm'}; // khớp data-filter-value của landing page
-const NAV=[['dash','Tổng quan','▦'],['prod','Sản phẩm','▣'],['trash','Thùng rác','♲'],['cat','Danh mục','☰'],['mkt','Marketing & Ưu đãi','✦'],['quote','Yêu cầu báo giá','▧'],['warranty','Bảo hành','◇'],'Hệ thống',['db','Cơ sở dữ liệu & Sao lưu','▣'],['settings','Cài đặt','⚙']];
+const IMG=location.hostname==='localhost'?'http://localhost:3001/':'https://enice.vn/';
+const CATS={'Ngâm Thường':'Bồn Tắm Ngâm Việt Nam','Nhập Khẩu':'Bồn Tắm Nhập Khẩu','Phòng Xông Hơi':'Phòng Xông Hơi','Massage':'Bồn Tắm Massage VN','Bồn cầu':'Bồn Cầu','Sen Vòi':'Sen Vòi Treo Tường','Cây sen đặt sàn':'Cây sen đặt sàn','Tủ Nhựa':'Tủ Nhựa PVC Cao Cấp','lavabo':'Lavabo','Bàn Đá':'Bàn Đá','Gương':'Gương Soi Đèn Led','Vòi Lavabo':'Vòi Lavabo Nóng Lạnh','Vòi Chén':'Vòi Chén Nóng Lạnh','Vòi Vệ Sinh':'Vòi Xịt Vệ Sinh','Bộ Xả':'Bộ Xả Thoát Nước LVB','Bồn Rửa Bát':'Bồn Rửa Bát Inox','Phụ Kiện':'Phụ Kiện Phòng Tắm'};
+const NAV=[['dash','Tổng quan','▦','#60a5fa'],['prod','Sản phẩm','▣','#34d399'],['trash','Thùng rác','♲','#f87171'],['cat','Danh mục','☰','#fbbf24'],['mkt','Marketing & Ưu đãi','✦','#f472b6'],['quote','Yêu cầu báo giá','▧','#a78bfa'],['warranty','Bảo hành','◇','#22d3ee'],'Hệ thống',['db','Cơ sở dữ liệu & Sao lưu','▣','#94a3b8'],['settings','Cài đặt','⚙','#fb923c']];
 const NAMES={dash:'Tổng quan',prod:'Sản phẩm',trash:'Thùng rác',cat:'Danh mục',mkt:'Marketing & Ưu đãi',quote:'Yêu cầu báo giá',warranty:'Bảo hành',db:'Cơ sở dữ liệu & Sao lưu',settings:'Cài đặt'};
-const S={page:'dash',q:'',st:'',cat:'',n:10,pg:0,sel:new Set(),c2:'',q2:'',k2:''};
+// State mở rộng thêm bộ lọc cho dashboard (rRange, rCat, rGroup, rMetric)
+const S={page:'dash',q:'',st:'',cat:'',n:10,pg:0,sel:new Set(),c2:'',q2:'',k2:'',rRange:'all',rCat:'',rGroup:'all',rMetric:'count'};
 let D=[],TR=[],rows=[];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
@@ -134,51 +198,322 @@ const stockTxt=p=>p.stock==null?'<span class="mut">—</span>':p.stock===0?'<b s
 const sizeTxt=p=>{const a=p.size||[];return a.length?esc(a[0])+(a.length>1?` <span class="mut" title="${esc(a.join(' | '))}">+${a.length-1}</span>`:''):'<span class="mut">—</span>'};
 const priceHtml=p=>p.salePrice&&p.salePrice<p.price?`<b>${vnd(p.salePrice)}</b><br><s class="mut xs">${vnd(p.price)}</s>`:`<b>${vnd(p.price)}</b>`;
 const sku=p=>p.sku||'ENICE-'+p.id;
- 
-async function load(){try{[D,TR,ME,PR,ST]=await Promise.all([api('products'),api('trash'),au('me'),api('promotions').catch(()=>[]),api('stats').catch(()=>null)]);showMe();draw()}catch(e){$('#view').innerHTML='<div class="card">Không tải được dữ liệu: '+esc(e.message)+'. Kiểm tra web 2 đã chạy và API key đúng chưa.</div>'}}
- 
+
+async function load(){try{[D,TR,ME,PR,ST]=await Promise.all([api('products'),api('trash'),au('me'),api('promotions').catch(()=>[]),api('stats').catch(()=>null)]);showMe();draw()}catch(e){$('#view').innerHTML='<div class="card">Không tải được dữ liệu: '+esc(e.message)+'. Kiểm tra web sản phẩm đã chạy và API key đúng chưa.</div>'}}
+
 function draw(){
-  $('#nav').innerHTML=NAV.map(n=>typeof n==='string'?`<h6>${n.toUpperCase()}</h6>`:`<a data-p="${n[0]}" class="${n[0]===S.page?'on':''}"><span>${n[2]}</span>${n[1]}${n[0]==='prod'?`<em>${D.length}</em>`:n[0]==='trash'?`<em>${TR.length}</em>`:''}</a>`).join('');
+  $('#nav').innerHTML=NAV.map(n=>typeof n==='string'?`<h6>${n.toUpperCase()}</h6>`:`<a data-p="${n[0]}" class="${n[0]===S.page?'on':''}"><span style="color:${n[3]||'inherit'}">${n[2]}</span>${n[1]}${n[0]==='prod'?`<em>${D.length}</em>`:n[0]==='trash'?`<em>${TR.length}</em>`:''}</a>`).join('');
   document.querySelectorAll('#nav a').forEach(a=>a.onclick=()=>go(a.dataset.p));
   $('#crumb').textContent=NAMES[S.page];$('#fab').hidden=!['dash','prod','mkt'].includes(S.page);
   $('#view').innerHTML=({dash,prod,cat,mkt,trash,settings}[S.page]||soon)();
-  if(S.page==='prod')listP();if(S.page==='cat')listC();
+  if(S.page==='prod')listP();if(S.page==='cat')listC();markC();
 }
 const go=p=>{document.body.classList.remove('nav');S.page=p;S.pg=0;S.sel.clear();draw();scrollTo(0,0)};
 const head=(eye,t,sub,act='')=>`<div class="top"><div><div class="eye">${eye}</div><h1>${t}</h1><div class="sub">${sub}</div></div><div>${act}</div></div>`;
 const soon=()=>head('HỆ THỐNG',NAMES[S.page],'Chức năng này đang được phát triển.')+'<div class="card mut">Chưa có dữ liệu. Phần này sẽ được bổ sung sau.</div>';
- 
-function dash(){
-  const hid=D.filter(p=>p.hidden).length,shown=D.length-hid,out=D.filter(p=>p.stock===0).length;
-  const miss=D.filter(missing).length,hid2=D.filter(p=>!missing(p)&&p.hidden).length,ok=D.length-miss-hid2,t=D.length||1;
-  const a=ok/t*100,b=a+hid2/t*100,ms=[],now=new Date();
-  for(let i=5;i>=0;i--){const d=new Date(now.getFullYear(),now.getMonth()-i,1);ms.push({k:d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'),l:'T'+(d.getMonth()+1),a:0,b:0})}
-  D.forEach(p=>ms.forEach(m=>{if((p.createdAt||'').startsWith(m.k))m.a++;if((p.updatedAt||'').startsWith(m.k)&&p.updatedAt!==p.createdAt)m.b++}));
-  const mx=Math.max(1,...ms.map(m=>Math.max(m.a,m.b)));
-  const rec=[...D].sort((x,y)=>(y.updatedAt||'').localeCompare(x.updatedAt||'')||y.id-x.id).slice(0,5);
-  const S0=ST||{today:0,uniqToday:0,week:0,month:0,total:0,series:[]},sv=S0.series||[],mv=Math.max(1,...sv.map(x=>x.v));
-  const liveN=PR.filter(p=>prSt(p)[0]==='Đang hiển thị').length,draftN=PR.filter(p=>!p.published).length;
-  const vb=`<div class="grid g2" style="margin-top:18px"><div class="card"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><h3>Lượt truy cập trang chủ bán hàng</h3><div class="mut xs">14 ngày gần đây · tự cập nhật mỗi 30 giây${ST?'':' · chưa lấy được số liệu từ web 2'}</div></div></div>
-   <div class="bars" style="height:140px">${sv.map(x=>`<div title="${x.d}: ${x.v} lượt"><span style="width:60%;max-width:22px;height:${x.v/mv*100}%;min-height:${x.v?3:0}px"></span></div>`).join('')}</div>
-   <div class="lab">${sv.map(x=>`<p>${x.d.slice(8)}</p>`).join('')}</div>
-   <div class="grid g4" style="margin-top:14px;gap:10px">${[['Hôm nay',S0.today],['7 ngày',S0.week],['30 ngày',S0.month],['Tổng cộng',S0.total]].map(([l,n])=>`<div><div class="mut xs">${l}</div><b style="font-size:18px">${n}</b></div>`).join('')}</div></div>
-   <div class="card"><h3>Marketing &amp; ưu đãi</h3><div class="mut xs">Bài đã đăng hiển thị ở trang chủ bán hàng</div><div class="num">${liveN}</div><div class="mut xs">đang hiển thị · ${draftN} bản nháp</div>
-   <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn p" onclick="editPromo()">+ Tạo bài</button><button class="btn" onclick="go('mkt')">Quản lý</button></div></div></div>`;
-  const st=(l,n,s)=>`<div class="card"><div class="mut xs">${l}</div><div class="num">${n}</div><div class="mut xs">${s}</div></div>`;
-  return head('BẢNG ĐIỀU KHIỂN','Tổng quan cửa hàng','Xin chào! Đây là tình hình hoạt động của ENICE hôm nay.','<button class="btn" onclick="load()">↻ Làm mới</button> <button class="btn p" onclick="edit()">+ Thêm sản phẩm</button>')+
-  `<div class="grid g4">${st('TỔNG SẢN PHẨM',D.length,'Trong cơ sở dữ liệu')}${st('ĐANG HIỂN THỊ',shown,(shown/t*100).toFixed(1)+'% tổng sản phẩm')}${st('TRUY CẬP HÔM NAY',S0.today,S0.uniqToday+' người truy cập')}${st('ƯU ĐÃI ĐANG CHẠY',liveN,'Hiển thị ở trang chủ')}</div>
-  <div class="grid g2" style="margin-top:18px"><div class="card"><h3>Biến động sản phẩm</h3><div class="mut xs">Số sản phẩm được thêm mới (xanh đậm) và cập nhật (xanh nhạt) theo tháng</div>
-   <div class="bars">${ms.map(m=>`<div><span style="height:${m.a/mx*100}%"></span><span style="height:${m.b/mx*100}%"></span></div>`).join('')}</div><div class="lab">${ms.map(m=>`<p>${m.l}</p>`).join('')}</div></div>
-  <div class="card"><h3>Trạng thái sản phẩm</h3><div class="mut xs">Phân bổ theo trạng thái hiển thị</div>
-   <div class="donut" style="background:conic-gradient(#4f7cf0 0 ${a}%,#f6ad3c ${a}% ${b}%,#2dbf8c ${b}% 100%)"><b>${D.length}<br><span class="mut xs" style="font-weight:400">Tổng sản phẩm</span></b></div>
-   <div class="lg"><span><i style="background:#4f7cf0"></i>Đang hiển thị</span><b>${ok}</b></div><div class="lg"><span><i style="background:#f6ad3c"></i>Đang ẩn</span><b>${hid2}</b></div><div class="lg"><span><i style="background:#2dbf8c"></i>Thiếu dữ liệu</span><b>${miss}</b></div></div></div>
-  ${vb}<div class="grid g2b" style="margin-top:18px"><div class="card"><div style="display:flex;justify-content:space-between"><div><h3>Sản phẩm cập nhật gần đây</h3><div class="mut xs">Theo dõi những thay đổi mới nhất trong danh mục</div></div><button class="btn" onclick="go('prod')">Xem tất cả →</button></div>
-   ${rec.map(p=>`<div class="row">${thumb(p)}<div class="n"><b>${esc(p.name)}</b><span class="mut xs">${esc(sku(p))} · ${esc(catLabel(p.brand))}</span></div><span class="tag ${p.hidden?'o':''}">${p.hidden?'Đang ẩn':'Đang hiển thị'}</span></div>`).join('')||'<p class="mut">Chưa có sản phẩm.</p>'}</div>
-  <div class="card"><h3>Thao tác nhanh</h3><div class="mut xs">Truy cập nhanh các công việc thường dùng</div><div class="grid g4b" style="margin-top:14px;gap:12px">
-   <button class="qa" onclick="edit()"><b>+ Thêm sản phẩm</b><span class="mut xs">Tạo sản phẩm mới</span></button><button class="qa" onclick="go('quote')"><b>Yêu cầu báo giá</b><span class="mut xs">Xử lý khách hàng</span></button>
-   <button class="qa" onclick="go('cat')"><b>Danh mục</b><span class="mut xs">Xem phân loại</span></button><button class="qa" onclick="go('db')"><b>Sao lưu dữ liệu</b><span class="mut xs">Bảo vệ dữ liệu</span></button></div></div></div>`;
+
+/* ---------- HỆ THỐNG BÁO CÁO TƯƠNG TÁC (DASHBOARD) ---------- */
+const tip=$('#ctip');
+function showTip(e,title,rows,hint='Nhấn vào biểu đồ để xem danh sách chi tiết'){
+  tip.innerHTML=`<b>${esc(title)}</b>`+rows.map(([k,v])=>`<div class="tr"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')+(hint?`<div class="hint">↗ ${esc(hint)}</div>`:'');
+  tip.style.display='block';moveTip(e);
 }
- 
+function moveTip(e){
+  if(tip.style.display==='none')return;
+  const x=Math.min(window.innerWidth-tip.offsetWidth-14,e.clientX+14);
+  const y=Math.min(window.innerHeight-tip.offsetHeight-14,e.clientY+14);
+  tip.style.left=Math.max(10,x)+'px';tip.style.top=Math.max(10,y)+'px';
+}
+const hideTip=()=>{tip.style.display='none'};
+document.addEventListener('mousemove',moveTip);
+
+// Mở modal xem danh sách sản phẩm khi click vào bất kỳ phần tử biểu đồ nào
+function drillDown(title,subtitle,list){
+  hideTip();
+  const f=$('#f');
+  f.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+    <div><h3>${esc(title)}</h3><div class="mut xs">${esc(subtitle)} (${list.length} sản phẩm)</div></div>
+    <button type="button" class="btn" onclick="$('#dlg').close()">✕ Đóng</button>
+  </div>
+  <div style="max-height:60vh;overflow-y:auto;border-top:1px solid var(--bd)">
+    ${list.map(p=>`<div class="row">${thumb(p)}<div class="n"><b>${esc(p.name)}</b><span class="mut xs">${esc(sku(p))} · ${esc(catLabel(p.brand))} · ${vnd(p.salePrice||p.price)}</span></div>
+    <span class="tag ${p.hidden?'o':''}">${p.hidden?'Đang ẩn':'Đang hiển thị'}</span>
+    <button type="button" class="btn e" onclick="edit(${p.id})">Sửa</button></div>`).join('')||'<p class="mut" style="padding:16px 0">Không có sản phẩm nào trong nhóm này.</p>'}
+  </div>`;
+  $('#dlg').showModal();
+}
+
+function getFilteredDash(){
+  const now=Date.now();
+  const daysMap={'7d':7,'30d':30,'90d':90,'180d':180,'all':0};
+  const days=daysMap[S.rRange]||0;
+  return D.filter(p=>{
+    if(S.rCat && p.brand!==S.rCat)return false;
+    if(S.rGroup==='show' && p.hidden)return false;
+    if(S.rGroup==='hide' && !p.hidden)return false;
+    if(S.rGroup==='top' && !p.isTopseller)return false;
+    if(S.rGroup==='sale' && !(p.salePrice && p.salePrice<p.price))return false;
+    if(S.rGroup==='out' && p.stock!==0)return false;
+    if(S.rGroup==='miss' && !missing(p))return false;
+    if(days>0){
+      const dt=Date.parse(p.updatedAt||p.createdAt||'');
+      if(!isNaN(dt) && (now-dt)>days*864e5)return false;
+    }
+    return true;
+  });
+}
+
+function dash(){
+  const FD=getFilteredDash();
+  const totalFiltered=FD.length;
+  const shown=FD.filter(p=>!p.hidden).length;
+  const hiddenCount=FD.filter(p=>p.hidden).length;
+  const topCount=FD.filter(p=>p.isTopseller).length;
+  const saleCount=FD.filter(p=>p.salePrice&&p.salePrice<p.price).length;
+  const outCount=FD.filter(p=>p.stock===0).length;
+  const miss=FD.filter(missing).length;
+  const hidClean=FD.filter(p=>!missing(p)&&p.hidden).length;
+  const okClean=Math.max(0,totalFiltered-miss-hidClean);
+  const invVal=FD.reduce((s,p)=>s+(Number(p.salePrice||p.price)||0)*(p.stock!=null?Number(p.stock):1),0);
+
+  // 1. Dữ liệu Biểu đồ Cột nhóm (Biến động sản phẩm theo tháng)
+  const monthN=S.rRange==='7d'||S.rRange==='30d'?4:S.rRange==='90d'?3:6;
+  const ms=[],now=new Date();
+  for(let i=monthN-1;i>=0;i--){
+    const d=new Date(now.getFullYear(),now.getMonth()-i,1);
+    ms.push({k:d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'),l:'Tháng '+(d.getMonth()+1),short:'T'+(d.getMonth()+1),a:0,b:0,itemsA:[],itemsB:[]});
+  }
+  FD.forEach(p=>ms.forEach(m=>{
+    if((p.createdAt||'').startsWith(m.k)){m.a++;m.itemsA.push(p)}
+    if((p.updatedAt||'').startsWith(m.k)&&p.updatedAt!==p.createdAt){m.b++;m.itemsB.push(p)}
+  }));
+  const maxBar=Math.max(1,...ms.map(m=>Math.max(m.a,m.b)));
+
+  // 2. Dữ liệu Biểu đồ Đường (Lượt truy cập trang chủ bán hàng)
+  const S0=ST||{today:0,uniqToday:0,week:0,month:0,total:0,series:[]};
+  const sliceDays=S.rRange==='7d'?7:14;
+  const sv=(S0.series||[]).slice(-sliceDays);
+  const maxLine=Math.max(1,...sv.map(x=>x.v));
+
+  // 3. Dữ liệu Biểu đồ Tròn (Donut - Phân bổ trạng thái sản phẩm)
+  const donutData=[
+    {id:'ok',label:'Đang hiển thị chuẩn',val:okClean,color:'#2f66f0',list:FD.filter(p=>!missing(p)&&!p.hidden)},
+    {id:'hid',label:'Đang ẩn trên web',val:hidClean,color:'#f59e0b',list:FD.filter(p=>!missing(p)&&p.hidden)},
+    {id:'miss',label:'Thiếu ảnh / giá',val:miss,color:'#14b8a6',list:FD.filter(missing)}
+  ];
+  const dTotal=Math.max(1,totalFiltered);
+  const R=62,C=2*Math.PI*R;
+  let offset=0;
+  const donutSegs=donutData.map(seg=>{
+    const pct=seg.val/dTotal;
+    const dash=pct*C;
+    const curOff=offset;
+    offset+=dash;
+    return {...seg,pct:(pct*100).toFixed(1),dash,curOff};
+  });
+
+  // 4. Dữ liệu Biểu đồ So sánh danh mục (Top 6 danh mục)
+  const catMap={};
+  FD.forEach(p=>{
+    const b=p.brand||'Khác';
+    if(!catMap[b])catMap[b]={brand:b,label:catLabel(b),count:0,shown:0,value:0,items:[]};
+    catMap[b].count++;
+    if(!p.hidden)catMap[b].shown++;
+    catMap[b].value+=(Number(p.salePrice||p.price)||0);
+    catMap[b].items.push(p);
+  });
+  const catRank=Object.values(catMap).sort((a,b)=>S.rMetric==='value'?b.value-a.value:b.count-a.count).slice(0,6);
+  const maxCmp=Math.max(1,...catRank.map(c=>S.rMetric==='value'?c.value:c.count));
+
+  // Lưu tham chiếu tạm để sự kiện inline gọi drillDown nhanh
+  window._D_STATE={ms,donutData,catRank,FD};
+
+  const liveN=PR.filter(p=>prSt(p)[0]==='Đang hiển thị').length,draftN=PR.filter(p=>!p.published).length;
+  const rec=[...FD].sort((x,y)=>(y.updatedAt||'').localeCompare(x.updatedAt||'')||y.id-x.id).slice(0,5);
+  const hasFilter=S.rRange!=='all'||S.rCat!==''||S.rGroup!=='all';
+
+  // Render SVG Biểu đồ Cột nhóm
+  const barW=460,barH=175,padL=28,padB=24,plotW=barW-padL-10,plotH=barH-padB-12;
+  const colStep=plotW/Math.max(1,ms.length);
+  const barSvg=`<svg class="svg-ch" viewBox="0 0 ${barW} ${barH}">
+    ${[0,0.5,1].map(t=>{
+      const y=12+plotH*(1-t),val=Math.round(maxBar*t);
+      return `<line x1="${padL}" y1="${y}" x2="${barW-6}" y2="${y}" stroke="var(--bd)" stroke-dasharray="${t?3:0}"/>
+              <text x="${padL-6}" y="${y+3}" text-anchor="end" fill="var(--mut)" font-size="10">${val}</text>`;
+    }).join('')}
+    ${ms.map((m,i)=>{
+      const cx=padL+colStep*i+colStep/2;
+      const bw=Math.min(20,colStep*0.28);
+      const hA=(m.a/maxBar)*plotH,hB=(m.b/maxBar)*plotH;
+      const yA=12+plotH-hA,yB=12+plotH-hB;
+      return `<g>
+        <rect class="ch-bar" x="${cx-bw-2}" y="${yA}" width="${bw}" height="${Math.max(hA,m.a?3:0)}" rx="4" fill="var(--blue)"
+          onmouseenter="showTip(event,'${m.l} · Thêm mới',[['Sản phẩm mới','${m.a} SP'],['Tỷ trọng','${(m.a/dTotal*100).toFixed(1)}%']])"
+          onmouseleave="hideTip()"
+          onclick="drillDown('Sản phẩm thêm mới · ${m.l}','Danh sách sản phẩm tạo trong ${m.l}',window._D_STATE.ms[${i}].itemsA)"/>
+        <rect class="ch-bar" x="${cx+2}" y="${yB}" width="${bw}" height="${Math.max(hB,m.b?3:0)}" rx="4" fill="#f59e0b"
+          onmouseenter="showTip(event,'${m.l} · Cập nhật',[['Sản phẩm cập nhật','${m.b} SP'],['Tỷ trọng','${(m.b/dTotal*100).toFixed(1)}%']])"
+          onmouseleave="hideTip()"
+          onclick="drillDown('Sản phẩm cập nhật · ${m.l}','Danh sách sản phẩm chỉnh sửa trong ${m.l}',window._D_STATE.ms[${i}].itemsB)"/>
+        <text x="${cx}" y="${barH-6}" text-anchor="middle" fill="var(--mut)" font-size="11">${m.short}</text>
+      </g>`;
+    }).join('')}
+  </svg>`;
+
+  // Render SVG Biểu đồ Đường (Traffic)
+  const lnW=460,lnH=175,lPadL=32,lPadB=24,lPlotW=lnW-lPadL-12,lPlotH=lnH-lPadB-14;
+  const pts=sv.map((x,i)=>{
+    const px=lPadL+(sv.length>1?(i/(sv.length-1))*lPlotW:lPlotW/2);
+    const py=14+lPlotH*(1-x.v/maxLine);
+    return {x:px,y:py,d:x.d,v:x.v};
+  });
+  const polyPts=pts.map(p=>`${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+  const areaPts=pts.length?`${pts[0].x.toFixed(1)},${14+lPlotH} ${polyPts} ${pts[pts.length-1].x.toFixed(1)},${14+lPlotH}`:'';
+  const lineSvg=pts.length?`<svg class="svg-ch" viewBox="0 0 ${lnW} ${lnH}">
+    <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#14b8a6" stop-opacity="0.28"/><stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/></linearGradient></defs>
+    ${[0,0.5,1].map(t=>{
+      const y=14+lPlotH*(1-t),val=Math.round(maxLine*t);
+      return `<line x1="${lPadL}" y1="${y}" x2="${lnW-8}" y2="${y}" stroke="var(--bd)" stroke-dasharray="${t?3:0}"/>
+              <text x="${lPadL-6}" y="${y+3}" text-anchor="end" fill="var(--mut)" font-size="10">${val}</text>`;
+    }).join('')}
+    <polygon points="${areaPts}" fill="url(#areaGrad)"/>
+    <polyline fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="${polyPts}"/>
+    ${pts.map((p,i)=>`<g>
+      <circle class="ch-pt" cx="${p.x}" cy="${p.y}" r="4.2" fill="var(--card)" stroke="#14b8a6" stroke-width="2.5"
+        onmouseenter="showTip(event,'Ngày ${p.d.split('-').reverse().join('/')}',[['Lượt truy cập','${p.v} lượt'],['So với đỉnh','${Math.round(p.v/maxLine*100)}%']],'Dữ liệu đồng bộ từ trang bán hàng')"
+        onmouseleave="hideTip()"/>
+      ${(sv.length<=8||i%2===0)?`<text x="${p.x}" y="${lnH-6}" text-anchor="middle" fill="var(--mut)" font-size="10">${p.d.slice(8)}/${p.d.slice(5,7)}</text>`:''}
+    </g>`).join('')}
+  </svg>`:'<div class="mut xs" style="padding:46px 0;text-align:center">Chưa có dữ liệu chuỗi thời gian từ website bán hàng.</div>';
+
+  return head('BÁO CÁO TƯƠNG TÁC · BẢNG ĐIỀU KHIỂN','Tổng quan & Phân tích cửa hàng','Di chuột vào biểu đồ để xem chỉ số chi tiết hoặc nhấn trực tiếp để khám phá danh sách sản phẩm.',
+    '<button class="btn" onclick="load()">↻ Làm mới</button> <button class="btn p" onclick="edit()">+ Thêm sản phẩm</button>')+
+
+  // THANH BỘ LỌC TƯƠNG TÁC
+  `<div class="rbar">
+    <div class="rbar-grp" role="group" aria-label="Khoảng thời gian">
+      ${[['all','Tất cả'],['7d','7 ngày'],['30d','30 ngày'],['90d','3 tháng'],['180d','6 tháng']].map(([k,lb])=>
+        `<button type="button" class="rpill ${S.rRange===k?'on':''}" onclick="S.rRange='${k}';draw()">${lb}</button>`).join('')}
+    </div>
+    <select class="rsel" onchange="S.rCat=this.value;draw()" aria-label="Lọc danh mục">
+      <option value="">Tất cả danh mục (${Object.keys(CATS).length})</option>${catOpts(S.rCat)}
+    </select>
+    <select class="rsel" onchange="S.rGroup=this.value;draw()" aria-label="Nhóm dữ liệu">
+      ${[['all','Nhóm: Tất cả sản phẩm'],['show','Đang hiển thị trên web'],['hide','Đang ẩn'],['top','Sản phẩm bán chạy'],['sale','Đang giảm giá / Ưu đãi'],['out','Đã hết hàng'],['miss','Thiếu ảnh hoặc giá']].map(([v,l])=>
+        `<option value="${v}" ${S.rGroup===v?'selected':''}>${l}</option>`).join('')}
+    </select>
+    ${hasFilter?`<button type="button" class="btn" style="padding:6px 12px;font-size:12px" onclick="S.rRange='all';S.rCat='';S.rGroup='all';draw()">✕ Xóa bộ lọc</button>`:''}
+    <div class="rbadge"><span>Đang phân tích: <b style="color:var(--tx)">${totalFiltered}</b> / ${D.length} SP</span></div>
+  </div>`+
+
+  // 4 THẺ KPI TƯƠNG TÁC (NHẤN ĐỂ XEM DANH SÁCH)
+  `<div class="grid g4">
+    <div class="card stc s1 clickable" onclick="drillDown('Danh sách sản phẩm đang lọc','Toàn bộ sản phẩm khớp với bộ lọc hiện tại',window._D_STATE.FD)">
+      <span class="chip">▣</span><div class="mut xs l">SẢN PHẨM TRONG BÁO CÁO</div><div class="num">${totalFiltered}</div>
+      <div class="mut xs">${shown} hiển thị · ${hiddenCount} đang ẩn</div>
+    </div>
+    <div class="card stc s2 clickable" onclick="drillDown('Sản phẩm bán chạy & Khuyến mãi','Nhóm sản phẩm nổi bật trong bộ lọc',window._D_STATE.FD.filter(p=>p.isTopseller||(p.salePrice&&p.salePrice<p.price)))">
+      <span class="chip">★</span><div class="mut xs l">BÁN CHẠY &amp; GIẢM GIÁ</div><div class="num">${topCount} <span style="font-size:15px;font-weight:600;color:var(--mut)">/ ${saleCount} sale</span></div>
+      <div class="mut xs">Chiếm ${totalFiltered?(topCount/totalFiltered*100).toFixed(1):0}% nhóm đang xem</div>
+    </div>
+    <div class="card stc s3 clickable" onclick="go('prod')">
+      <span class="chip">₫</span><div class="mut xs l">GIÁ TRỊ HÀNG HÓA ƯỚC TÍNH</div><div class="num" style="font-size:22px">${(invVal/1e6).toFixed(1)} Tr ₫</div>
+      <div class="mut xs">${outCount} sản phẩm hết hàng</div>
+    </div>
+    <div class="card stc s4 clickable" onclick="go('mkt')">
+      <span class="chip">↗</span><div class="mut xs l">TRUY CẬP &amp; ƯU ĐÃI</div><div class="num">${S0.today} <span style="font-size:14px;font-weight:600;color:#15935f">lượt/ngày</span></div>
+      <div class="mut xs">${S0.uniqToday} khách · ${liveN} ưu đãi đang chạy</div>
+    </div>
+  </div>`+
+
+  // HÀNG BIỂU ĐỒ 1: BIỂU ĐỒ CỘT NHÓM + BIỂU ĐỒ TRÒN PHÂN BỔ
+  `<div class="grid g2" style="margin-top:18px">
+    <div class="card k1">
+      <div class="ch-hd">
+        <div><h3>Biểu đồ cột: Biến động sản phẩm theo tháng</h3><div class="mut xs">Nhấn vào từng cột để xem danh sách sản phẩm được thêm hoặc cập nhật</div></div>
+        <div class="ch-leg"><span><i style="background:var(--blue)"></i>Thêm mới</span><span><i style="background:#f59e0b"></i>Cập nhật</span></div>
+      </div>
+      <div class="ch-box">${barSvg}</div>
+    </div>
+    <div class="card k2">
+      <div class="ch-hd">
+        <div><h3>Biểu đồ tròn: Trạng thái dữ liệu</h3><div class="mut xs">Tỷ trọng hiển thị &amp; mức độ hoàn thiện thông tin</div></div>
+      </div>
+      <div class="donut-wrap">
+        <svg class="donut-svg" viewBox="0 0 168 168">
+          <circle cx="84" cy="84" r="${R}" fill="none" stroke="var(--pill)" stroke-width="20"/>
+          ${donutSegs.map((s,i)=>s.val?`<circle class="donut-seg" cx="84" cy="84" r="${R}" fill="none" stroke="${s.color}" stroke-width="20"
+            stroke-dasharray="${s.dash} ${C}" stroke-dashoffset="${-s.curOff}" transform="rotate(-90 84 84)"
+            onmouseenter="showTip(event,'${s.label}',[['Số lượng','${s.val} sản phẩm'],['Tỷ trọng','${s.pct}%']])"
+            onmouseleave="hideTip()"
+            onclick="drillDown('${s.label}','Danh sách sản phẩm thuộc nhóm ${s.label}',window._D_STATE.donutData[${i}].list)"/>`:'').join('')}
+          <text x="84" y="80" text-anchor="middle" fill="var(--tx)" font-size="22" font-weight="800">${totalFiltered}</text>
+          <text x="84" y="98" text-anchor="middle" fill="var(--mut)" font-size="10">Sản phẩm</text>
+        </svg>
+        <div class="donut-list">
+          ${donutSegs.map((s,i)=>`<div class="d-item" onclick="drillDown('${s.label}','Danh sách sản phẩm thuộc nhóm ${s.label}',window._D_STATE.donutData[${i}].list)">
+            <div class="d-item-l"><i style="background:${s.color}"></i><span>${s.label}</span></div>
+            <div style="text-align:right"><b>${s.val}</b> <span class="mut xs">(${s.pct}%)</span></div>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div>
+  </div>`+
+
+  // HÀNG BIỂU ĐỒ 2: BIỂU ĐỒ ĐƯỜNG LƯỢT TRUY CẬP + BIỂU ĐỒ SO SÁNH DANH MỤC
+  `<div class="grid g2eq" style="margin-top:18px">
+    <div class="card k3">
+      <div class="ch-hd">
+        <div><h3>Biểu đồ đường: Xu hướng truy cập website</h3><div class="mut xs">${sliceDays} ngày gần đây · Tự động đồng bộ mỗi 30 giây</div></div>
+        <div class="ch-leg"><span><i style="background:#14b8a6"></i>Lượt xem trang</span></div>
+      </div>
+      <div class="ch-box">${lineSvg}</div>
+      <div class="grid g4" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--bd);gap:10px">
+        ${[['Hôm nay',S0.today],['7 ngày',S0.week],['30 ngày',S0.month],['Tổng cộng',S0.total]].map(([l,n])=>`<div><div class="mut xs">${l}</div><b style="font-size:17px">${n}</b></div>`).join('')}
+      </div>
+    </div>
+    <div class="card k4">
+      <div class="ch-hd">
+        <div><h3>Biểu đồ so sánh: Top danh mục</h3><div class="mut xs">Nhấn vào từng thanh danh mục để lọc nhanh sản phẩm</div></div>
+        <div class="rbar-grp">
+          <button type="button" class="rpill ${S.rMetric==='count'?'on':''}" onclick="S.rMetric='count';draw()">Số lượng</button>
+          <button type="button" class="rpill ${S.rMetric==='value'?'on':''}" onclick="S.rMetric='value';draw()">Giá trị</button>
+        </div>
+      </div>
+      <div class="cmp-list">
+        ${catRank.map((c,i)=>{
+          const raw=S.rMetric==='value'?c.value:c.count;
+          const pct=Math.max(4,Math.round(raw/maxCmp*100));
+          const disp=S.rMetric==='value'?(c.value/1e6).toFixed(1)+' Tr ₫':c.count+' SP ('+c.shown+' hiện)';
+          return `<div class="cmp-row"
+            onmouseenter="showTip(event,'Danh mục: ${c.label}',[['Tổng số lượng','${c.count} sản phẩm'],['Đang hiển thị','${c.shown} sản phẩm'],['Tổng giá niêm yết','${vnd(c.value)}']])"
+            onmouseleave="hideTip()"
+            onclick="drillDown('Danh mục: ${c.label}','Tất cả sản phẩm thuộc nhóm ${c.label}',window._D_STATE.catRank[${i}].items)">
+            <div class="cmp-top"><b>${esc(c.label)}</b><span class="mut">${disp}</span></div>
+            <div class="cmp-track"><div class="cmp-fill" style="width:${pct}%;background:var(--blue)"></div></div>
+          </div>`;
+        }).join('')||'<div class="mut xs" style="padding:24px 0">Không có dữ liệu danh mục phù hợp bộ lọc.</div>'}
+      </div>
+    </div>
+  </div>`+
+
+  // HÀNG CUỐI: CẬP NHẬT GẦN ĐÂY & MARKETING / THAO TÁC NHANH
+  `<div class="grid g2b" style="margin-top:18px">
+    <div class="card k5"><div style="display:flex;justify-content:space-between"><div><h3>Sản phẩm cập nhật gần đây (theo bộ lọc)</h3><div class="mut xs">Theo dõi những thay đổi mới nhất trong danh mục</div></div><button class="btn" onclick="go('prod')">Xem tất cả →</button></div>
+     ${rec.map(p=>`<div class="row">${thumb(p)}<div class="n"><b>${esc(p.name)}</b><span class="mut xs">${esc(sku(p))} · ${esc(catLabel(p.brand))} · ${vnd(p.salePrice||p.price)}</span></div><span class="tag ${p.hidden?'o':''}">${p.hidden?'Đang ẩn':'Đang hiển thị'}</span></div>`).join('')||'<p class="mut" style="padding-top:12px">Không có sản phẩm khớp bộ lọc.</p>'}
+    </div>
+    <div class="card k6">
+      <h3>Marketing &amp; Thao tác nhanh</h3><div class="mut xs">${liveN} ưu đãi đang chạy · ${draftN} bản nháp</div>
+      <div class="grid g4b" style="margin-top:14px;gap:12px">
+        <button class="qa" onclick="edit()"><b>+ Thêm sản phẩm</b><span class="mut xs">Tạo sản phẩm mới</span></button>
+        <button class="qa" onclick="editPromo()"><b>+ Tạo bài ưu đãi</b><span class="mut xs">Đăng khuyến mãi web</span></button>
+        <button class="qa" onclick="go('cat')"><b>Danh mục</b><span class="mut xs">Xem phân loại</span></button>
+        <button class="qa" onclick="csv()"><b>⇩ Xuất báo cáo CSV</b><span class="mut xs">Tải dữ liệu Excel</span></button>
+      </div>
+    </div>
+  </div>`;
+}
+
 function prod(){
   return head('QUẢN LÝ DANH MỤC HÀNG HÓA','Quản lý sản phẩm','Thêm, chỉnh sửa, ẩn/hiện và quản lý sản phẩm trên website ENICE.','<span id="bulk"></span> <button class="btn" onclick="csv()">⇩ Xuất Excel</button> <button class="btn p" onclick="edit()">+ Thêm sản phẩm</button>')+
   `<div class="card"><div class="fl"><input id="q1" placeholder="Tìm tên, mã hoặc danh mục sản phẩm" value="${esc(S.q)}" oninput="S.q=this.value;S.pg=0;$('#q').value=S.q;listP()" aria-label="Tìm sản phẩm">
@@ -194,7 +529,7 @@ function listP(){
   $('#tbl').innerHTML=`<table><tr><th><input type="checkbox" ${rows.length&&rows.every(p=>S.sel.has(p.id))?'checked':''} onchange="selAll(this.checked)" aria-label="Chọn tất cả"></th><th>SẢN PHẨM</th><th>DANH MỤC</th><th>GIÁ BÁN</th><th>KÍCH THƯỚC</th><th>MÀU SẮC</th><th>TỒN KHO</th><th>HIỂN THỊ WEB</th><th>BÁN CHẠY</th><th>THAO TÁC</th></tr>
   ${rows.map(p=>`<tr><td data-l="Chọn"><input type="checkbox" ${S.sel.has(p.id)?'checked':''} onchange="sel(${p.id},this.checked)" aria-label="Chọn"></td>
    <td data-h><div style="display:flex;gap:12px;align-items:center">${thumb(p)}<div><b>${esc(p.name)}</b><div class="mut xs">${esc(sku(p))} · ID ${p.id} · ★ ${(+p.rating||5).toFixed(1)} · ${p.img1?1:0} ảnh</div></div></div></td>
-   <td data-l="Danh mục"><span class="pill">${esc(catLabel(p.brand))}</span></td><td data-l="Giá bán">${priceHtml(p)}</td><td data-l="Kích thước">${sizeTxt(p)}</td><td data-l="Màu sắc">${esc(p.color)||'<span class="mut">—</span>'}</td><td data-l="Tồn kho">${stockTxt(p)}</td>
+   <td data-l="Danh mục"><span class="pill c" style="--h:${hue(p.brand)}">${esc(catLabel(p.brand))}</span></td><td data-l="Giá bán">${priceHtml(p)}</td><td data-l="Kích thước">${sizeTxt(p)}</td><td data-l="Màu sắc">${esc(p.color)||'<span class="mut">—</span>'}</td><td data-l="Tồn kho">${stockTxt(p)}</td>
    <td data-l="Hiển thị web">${sw(p.id,'show',!p.hidden)}</td><td data-l="Bán chạy">${sw(p.id,'top',p.isTopseller)}</td><td data-l="Thao tác" style="white-space:nowrap"><button class="btn e" onclick="edit(${p.id})">✎ Sửa</button> <button class="btn d" onclick="del(${p.id})">⌫ Xóa</button></td></tr>`).join('')||'<tr><td colspan="10" class="mut">Không có sản phẩm phù hợp.</td></tr>'}</table>
   <div class="pg"><span class="mut xs">Đang hiển thị ${rows.length} / ${l.length} sản phẩm phù hợp · Trang ${S.pg+1}/${pages}</span><div><span class="mut xs">Số sản phẩm hiển thị</span>
    <select onchange="S.n=+this.value;S.pg=0;listP()" aria-label="Số sản phẩm mỗi trang">${[10,20,50,100].map(n=>`<option value="${n}" ${n===S.n?'selected':''}>${n} / ${D.length}</option>`).join('')}</select>
@@ -206,7 +541,7 @@ const selAll=on=>{rows.forEach(p=>on?S.sel.add(p.id):S.sel.delete(p.id));listP()
 async function bulk(){if(!confirm('Chuyển '+S.sel.size+' sản phẩm vào thùng rác?'))return;try{for(const id of [...S.sel])await api('products/'+id,{method:'DELETE'});S.sel.clear();toast('Đã chuyển vào thùng rác')}catch(e){toast('Lỗi: '+e.message)}load()}
 async function tog(id,k,v){const p=D.find(x=>x.id===id),body={...p};if(k==='show')body.hidden=!v;else body.isTopseller=v;
   try{Object.assign(p,await api('products/'+id,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}));toast(k==='show'?(v?'Đã hiển thị trên web':'Đã ẩn khỏi web'):(v?'Đã đánh dấu bán chạy':'Đã bỏ bán chạy'))}catch(e){toast('Lỗi: '+e.message)}draw()}
- 
+
 function cat(){
   const vis=D.filter(p=>!p.hidden),cnt={};vis.forEach(p=>cnt[p.brand]=(cnt[p.brand]||0)+1);S._cnt=cnt;
   return head('PHÂN LOẠI HÀNG HÓA','Danh mục sản phẩm','Danh sách danh mục hiện có và các sản phẩm đang được hiển thị trong cửa hàng.')+
@@ -220,7 +555,7 @@ function tiles(){const k=S.k2.toLowerCase();$('#tiles').innerHTML=Object.keys(S.
 function listC(){tiles();const q=S.q2.toLowerCase(),l=D.filter(p=>!p.hidden&&(!S.c2||p.brand===S.c2)&&(!q||(p.name+' '+sku(p)).toLowerCase().includes(q))&&(!S.s2||(S.s2==='out'?p.stock===0:p.stock!==0)));
   $('#tbl2').innerHTML=`<table style="min-width:760px"><tr><th>SẢN PHẨM</th><th>DANH MỤC</th><th>GIÁ HIỂN THỊ</th><th>KÍCH THƯỚC</th><th>TỒN KHO</th><th>TRẠNG THÁI</th></tr>
   ${l.map(p=>`<tr><td data-h><div style="display:flex;gap:12px;align-items:center">${thumb(p)}<div><b>${esc(p.name)}</b><div class="mut xs">${esc(sku(p))}</div></div></div></td><td data-l="Danh mục">${esc(catLabel(p.brand))}</td><td data-l="Giá hiển thị">${vnd(p.salePrice||p.price)}</td><td data-l="Kích thước">${sizeTxt(p)}</td><td data-l="Tồn kho">${stockTxt(p)}</td><td data-l="Trạng thái"><span class="tag">Đang bán</span></td></tr>`).join('')||'<tr><td colspan="6" class="mut">Không có sản phẩm phù hợp.</td></tr>'}</table>`}
- 
+
 function settings(){
   return head('HỆ THỐNG','Cài đặt','Đổi tên đăng nhập và mật khẩu của tài khoản quản trị.')+`<div class="grid g4b" style="align-items:start">
   <div class="card"><h3>Tên đăng nhập</h3><div class="mut xs">3-40 ký tự: chữ không dấu, số, và . _ - @</div><form class="st" onsubmit="saveName(event)">
@@ -229,13 +564,13 @@ function settings(){
    <small role="status"></small><div style="margin-top:12px"><button class="btn p">Lưu tên đăng nhập</button></div></form></div>
   <div class="card"><h3>Đổi mật khẩu</h3><div class="mut xs">Sau khi đổi, các nơi khác đang đăng nhập sẽ bị đăng xuất.</div><form class="st" onsubmit="savePw(event)">
    <label for="p0">Mật khẩu hiện tại</label><input id="p0" type="password" autocomplete="current-password" required><label for="p1">Mật khẩu mới (ít nhất 8 ký tự, có chữ và số)</label><input id="p1" type="password" autocomplete="new-password" required>
-   <label for="p2">Nhập lại mật khẩu mới</label><input id="p2" type="password" autocomplete="new-password" required><small role="status"></small><div style="margin-top:12px"><button class="btn p">Cập nhật mật khẩu</button></div></form></div></div>`;
+   <label for="p2">Nhập lại mật khẩu mới</label><input id="p2" type="password" autocomplete="new-password" required><small role="status"></small><div style="margin-top:12px"><button class="btn p">Cập nhật mật khẩu</button></div></form></div><div class="card k6" style="grid-column:1/-1"><h3>Giao diện</h3><div class="mut xs">Chọn màu chủ đạo cho trang quản trị. Lựa chọn được ghi nhớ trên trình duyệt này.</div><div class="sqs">${swatches()}</div><div style="margin-top:14px"><button type="button" class="btn" onclick="$('#dk').click()">◐ Chuyển sáng / tối</button></div></div></div>`;
 }
 const note=(f,t,ok)=>{const s=f.querySelector('small');s.textContent=t;s.className=ok?'ok':''};
 async function saveName(e){e.preventDefault();const f=e.target;try{ME=await au('profile',{username:$('#sn').value,current:$('#sc').value});showMe();$('#sc').value='';note(f,'Đã lưu tên đăng nhập mới.',1)}catch(er){note(f,er.message)}}
 async function savePw(e){e.preventDefault();const f=e.target;if($('#p1').value!==$('#p2').value)return note(f,'Hai mật khẩu mới chưa giống nhau.');
   try{await au('password',{current:$('#p0').value,password:$('#p1').value});f.reset();note(f,'Đã đổi mật khẩu.',1)}catch(er){note(f,er.message)}}
- 
+
 /* ---------- Marketing & ưu đãi ---------- */
 const todayS=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
 const fd=d=>d?d.split('-').reverse().join('/'):'';
@@ -247,7 +582,7 @@ function mkt(){
   return head('MARKETING & ƯU ĐÃI','Marketing &amp; Ưu đãi','Tạo bài giảm giá, chương trình ưu đãi. Bài đã đăng sẽ hiện ở trang chủ bán hàng cho khách xem.','<button class="btn p" onclick="editPromo()">+ Tạo bài ưu đãi</button>')+
   `<div class="card"><div class="mut xs" style="margin-bottom:10px">${PR.length} bài · ${live} đang hiển thị ở trang chủ</div><div class="tw"><table style="min-width:860px"><tr><th>BÀI VIẾT</th><th>ƯU ĐÃI</th><th>THỜI GIAN</th><th>TRẠNG THÁI</th><th>ĐĂNG</th><th>THAO TÁC</th></tr>
   ${[...PR].sort((a,b)=>b.id-a.id).map(p=>{const[st,c]=prSt(p);return `<tr><td data-h><div style="display:flex;gap:12px;align-items:center">${thumbP(p)}<div><b>${esc(p.title)}</b><div class="mut xs">${esc((p.summary||'').slice(0,80))}</div></div></div></td>
-   <td data-l="Ưu đãi">${p.badge?`<span class="pill">${esc(p.badge)}</span>`:'<span class="mut">—</span>'}</td><td data-l="Thời gian" class="xs">${dr(p)}</td><td data-l="Trạng thái"><span class="tag ${c}">${st}</span></td>
+   <td data-l="Ưu đãi">${p.badge?`<span class="pill hot">${esc(p.badge)}</span>`:'<span class="mut">—</span>'}</td><td data-l="Thời gian" class="xs">${dr(p)}</td><td data-l="Trạng thái"><span class="tag ${c}">${st}</span></td>
    <td data-l="Đăng"><label class="sw"><input type="checkbox" ${p.published?'checked':''} onchange="togPr(${p.id},this.checked)" aria-label="Đăng lên trang chủ"><i></i></label></td>
    <td data-l="Thao tác" style="white-space:nowrap"><button class="btn e" onclick="editPromo(${p.id})">✎ Sửa</button> <button class="btn d" onclick="delPr(${p.id})">⌫ Xóa</button></td></tr>`}).join('')||'<tr><td colspan="6" class="mut">Chưa có bài nào. Bấm “Tạo bài ưu đãi” để bắt đầu.</td></tr>'}</table></div></div>`;
 }
@@ -270,16 +605,16 @@ function editPromo(id){
   $('#dlg').showModal();
 }
 const fabAdd=()=>S.page==='mkt'?editPromo():edit();
- 
+
 function trash(){return head('KHÔI PHỤC DỮ LIỆU','Thùng rác','Sản phẩm đã xóa được giữ lại để bạn khôi phục khi cần.')+`<div class="card">${TR.map(p=>`<div class="row">${thumb(p)}<div class="n"><b>${esc(p.name)}</b><span class="mut xs">Xóa lúc ${new Date(p.deletedAt).toLocaleString('vi-VN')}</span></div>
   <button class="btn e" onclick="act('trash/${p.id}/restore','POST','Đã khôi phục')">Khôi phục</button><button class="btn d" onclick="confirm('Xóa vĩnh viễn sản phẩm này?')&&act('trash/${p.id}','DELETE','Đã xóa vĩnh viễn')">Xóa vĩnh viễn</button></div>`).join('')||'<p class="mut">Thùng rác trống.</p>'}</div>`}
 async function act(u,m,msg){try{await api(u,{method:m});toast(msg)}catch(e){toast('Lỗi: '+e.message)}load()}
 const del=id=>confirm('Chuyển sản phẩm này vào thùng rác?')&&act('products/'+id,'DELETE','Đã chuyển vào thùng rác');
- 
-function csv(){const c=v=>'"'+String(v??'').replace(/"/g,'""')+'"',l=flt();
+
+function csv(){const c=v=>'"'+String(v??'').replace(/"/g,'""')+'"',l=S.page==='dash'?getFilteredDash():flt();
   const t=[['ID','Mã','Tên','Danh mục','Giá gốc','Giá bán','Kích thước','Màu sắc','Tồn kho','Hiển thị web','Bán chạy'],...l.map(p=>[p.id,sku(p),p.name,catLabel(p.brand),p.price,p.salePrice||'',(p.size||[]).join(' | '),p.color||'',p.stock??'',p.hidden?'Không':'Có',p.isTopseller?'Có':'Không'])].map(r=>r.map(c).join(',')).join('\r\n');
-  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+t],{type:'text/csv;charset=utf-8'}));a.download='san-pham-enice.csv';a.click();URL.revokeObjectURL(a.href)}
- 
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+t],{type:'text/csv;charset=utf-8'}));a.download='bao-cao-enice.csv';a.click();URL.revokeObjectURL(a.href)}
+
 function edit(id){
   const p=D.find(x=>x.id===id)||{rating:5,size:[]},f=$('#f');
   f.innerHTML=`<h3>${id?'Sửa sản phẩm':'Thêm sản phẩm'}</h3><label>Tên sản phẩm</label><input name="name" required value="${esc(p.name)}">
@@ -297,13 +632,23 @@ function edit(id){
       await api(id?'products/'+id:'products',{method:id?'PUT':'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});$('#dlg').close();toast('Đã lưu sản phẩm');await load()}catch(er){toast('Lỗi: '+er.message)}};
   $('#dlg').showModal();
 }
- 
+
 $('#q').oninput=e=>{S.q=e.target.value;S.pg=0;if(S.page!=='prod'){S.page='prod';draw();$('#q').focus()}else{const q1=$('#q1');if(q1)q1.value=S.q;listP()}};
+/* ---------- Màu giao diện ---------- */
+const THEMES=[['','Xanh dương','#2f66f0'],['tim','Tím','#7c3aed'],['ngoc','Xanh ngọc','#047857'],['cam','Cam','#c2410c'],['hong','Hồng','#be185d'],['do','Đỏ rượu','#be123c']];
+const curC=()=>document.documentElement.dataset.c||'';
+const swatches=()=>THEMES.map(([k,n,c])=>`<button type="button" class="sq" data-c="${k}" style="background:${c}" title="${n}" aria-label="Màu ${n}" aria-pressed="false" onclick="setC('${k}')"></button>`).join('');
+const markC=()=>document.querySelectorAll('.sq').forEach(b=>{const on=b.dataset.c===curC();b.setAttribute('aria-pressed',on);b.classList.toggle('on',on)});
+function setC(c){document.documentElement.dataset.c=c;try{localStorage.setItem('c',c)}catch(_){}markC()}
+const hue=s=>{let h=0;for(const ch of String(s||''))h=(h*31+ch.charCodeAt(0))%360;return h};
+$('#pal .sqs').innerHTML=swatches();
+$('#pl').onclick=e=>{e.stopPropagation();const p=$('#pal');p.hidden=!p.hidden;$('#pl').setAttribute('aria-expanded',String(!p.hidden));markC()};
+document.addEventListener('click',e=>{const p=$('#pal');if(!p.hidden&&!p.contains(e.target)){p.hidden=true;$('#pl').setAttribute('aria-expanded','false')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#pal').hidden=true;$('#pl').setAttribute('aria-expanded','false')}});
 $('#dk').onclick=()=>{const d=document.documentElement.dataset.t==='dark'?'':'dark';document.documentElement.dataset.t=d;try{localStorage.setItem('t',d)}catch(_){}};
-try{document.documentElement.dataset.t=localStorage.getItem('t')||''}catch(_){}
+try{document.documentElement.dataset.t=localStorage.getItem('t')||'';document.documentElement.dataset.c=localStorage.getItem('c')||''}catch(_){}
 addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
 $('#hb').onclick=()=>document.body.classList.toggle('nav');$('#bd').onclick=()=>document.body.classList.remove('nav');
 setInterval(async()=>{if(S.page==='dash'&&!document.hidden&&!$('#dlg').open){try{ST=await api('stats');draw()}catch(_){}}},30000);
 load();
 </script></body></html>
- 
